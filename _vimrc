@@ -32,6 +32,9 @@ set foldmethod=indent
 set foldlevel=99
 set go-=T
 
+set noeb vb t_vb=
+au GUIEnter * set vb t_vb=
+
 if has("gui_running")
   " GUI is running or is about to start.
   " Maximize gvim window.
