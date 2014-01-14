@@ -5,7 +5,8 @@ behave mswin
 
 execute pathogen#infect()
 execute pathogen#helptags()
-set gfn=Consolas:h10:cANSI
+set encoding=utf-8
+set guifont=Consolas\ for\ Powerline\ FixedD:h10
 syntax enable
 set background=light
 colorscheme solarized
@@ -28,9 +29,22 @@ set wrapmargin=0
 set colorcolumn=80
 set autoindent
 set autochdir
+set splitbelow
+set splitright
 set foldmethod=indent
 set foldlevel=99
 set go-=T
+set laststatus=2
+
+let g:indentLine_char = '¦'
+
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+
+nmap <silent> <Leader>il :IndentLinesToggle<CR>
+nmap <silent> <Leader>nt :NERDTreeToggle<CR>
 
 set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
@@ -38,7 +52,7 @@ au GUIEnter * set vb t_vb=
 if has("gui_running")
   " GUI is running or is about to start.
   " Maximize gvim window.
-  set lines=60 columns=100
+  set lines=60 columns=85
   winpos 0 0
 else
   " This is console Vim.
@@ -46,7 +60,7 @@ else
     set lines=50
   endif
   if exists("+columns")
-    set columns=100
+    set columns=85
   endif
 endif
 
@@ -74,4 +88,3 @@ function MyDiff()
   endif
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
-
