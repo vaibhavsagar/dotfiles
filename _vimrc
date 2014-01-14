@@ -6,7 +6,8 @@ behave mswin
 execute pathogen#infect()
 execute pathogen#helptags()
 set encoding=utf-8
-set guifont=Consolas\ for\ Powerline\ FixedD:h10
+scriptencoding utf-8
+set guifont=Consolas:h10
 syntax enable
 set background=light
 colorscheme solarized
@@ -38,10 +39,15 @@ set laststatus=2
 
 let g:indentLine_char = '¦'
 
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.space = ' '
 
 nmap <silent> <Leader>il :IndentLinesToggle<CR>
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
