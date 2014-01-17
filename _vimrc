@@ -14,21 +14,27 @@ colorscheme solarized
 
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
+
 set nobackup
 set noswapfile
 set pastetoggle=<F2>
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
+set autoindent
+
 set number
+
 set wrap
 set linebreak
 set nolist
 set textwidth=0
 set wrapmargin=0
 set colorcolumn=80
-set autoindent
+
+
 set autochdir
 set splitbelow
 set splitright
@@ -39,23 +45,25 @@ set laststatus=2
 
 let g:indentLine_char = '¦'
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
-let g:airline_symbols.space = ' '
 
 nmap <silent> <Leader>il :IndentLinesToggle<CR>
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
+nmap <silent> <Leader>f  za
+nnoremap <F5> :GundoToggle<CR>
+
+nmap <Leader>t :Tab<Space>/
+vmap <Leader>t :Tab<Space>/
 
 let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+let g:gundo_prefer_python3 = 1
 
 set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
