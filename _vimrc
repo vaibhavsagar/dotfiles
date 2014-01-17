@@ -1,16 +1,38 @@
 set nocompatible
+filetype off " For Vundle
+set rtp+=~/vimfiles/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-execute pathogen#infect()
-execute pathogen#helptags()
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'sjl/gundo.vim'
+Bundle 'Yggdroot/indentLine'
+Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
+Bundle 'godlygeek/tabular'
+Bundle 'SirVer/ultisnips'
+Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-repeat'
+Bundle 'mhinz/vim-startify'
+Bundle 'tpope/vim-surround'
+
+
 set encoding=utf-8
 scriptencoding utf-8
 set guifont=Consolas:h10
 syntax enable
 set background=light
 colorscheme solarized
+
+
+filetype plugin indent on
 
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
