@@ -1,10 +1,10 @@
 set nocompatible
 filetype off " For Vundle
-set rtp+=~/vimfiles/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 source $VIMRUNTIME/vimrc_example.vim
@@ -80,6 +80,7 @@ nnoremap <F5> :GundoToggle<CR>
 nmap <Leader>t :Tab<Space>/
 vmap <Leader>t :Tab<Space>/
 
+let g:UltiSnipsSnippetDirectories = ["snippets"]
 let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
