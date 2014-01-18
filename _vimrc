@@ -98,7 +98,7 @@ else
     " This is console Vim.
     if exists("+lines")
         set lines=50
-     endif
+    endif
     if exists("+columns")
         set columns=85
     endif
