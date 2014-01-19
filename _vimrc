@@ -70,7 +70,6 @@ let g:airline_right_alt_sep = ''
 
 nmap <silent> <Leader>il :IndentLinesToggle<CR>
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
-nmap <silent> <Leader>f  za
 nnoremap <F5> :GundoToggle<CR>
 
 nmap <Leader>t :Tab<Space>/
