@@ -22,7 +22,7 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-repeat'
 Bundle 'mhinz/vim-startify'
 Bundle 'tpope/vim-surround'
-
+Bundle 'fholgado/minibufexpl.vim'
 
 set encoding=utf-8
 scriptencoding utf-8
@@ -70,6 +70,7 @@ let g:airline_right_alt_sep = ''
 
 nmap <silent> <Leader>il :IndentLinesToggle<CR>
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
+nmap <silent> <Leader>mt :MBEToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
 
 nmap <Leader>t :Tab<Space>/
