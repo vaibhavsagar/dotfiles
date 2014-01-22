@@ -54,6 +54,9 @@ set textwidth=0
 set wrapmargin=0
 set colorcolumn=80
 
+set list
+set listchars=trail:.
+
 set autochdir
 set splitbelow
 set splitright
@@ -91,7 +94,7 @@ au GUIEnter * set vb t_vb=
 if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
-    set lines=60 columns=85
+    set lines=60 columns=90
     winpos 0 0
 else
     " This is console Vim.
