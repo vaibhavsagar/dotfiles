@@ -78,8 +78,14 @@ let g:airline_right_alt_sep = ''
 
 nmap <silent> <Leader>il :IndentLinesToggle<CR>
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
-nmap <silent> <Leader>mt :MBEToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
+
+
+nmap <silent> <Leader>mt :MBEToggle<CR>
+nmap <silent> <Leader>mn :MBEbn<CR>
+nmap <silent> <Leader>mp :MBEbp<CR>
+nmap <silent> <Leader>mf :MBEbf<CR>
+nmap <silent> <Leader>mb :MBEbb<CR>
 
 nmap <Leader>t :Tab<Space>/
 vmap <Leader>t :Tab<Space>/
