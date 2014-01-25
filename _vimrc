@@ -11,19 +11,20 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'sjl/gundo.vim'
-Bundle 'Yggdroot/indentLine'
-Bundle 'scrooloose/nerdtree'
-Bundle 'ervandew/supertab'
-Bundle 'godlygeek/tabular'
 Bundle 'SirVer/ultisnips'
+Bundle 'Yggdroot/indentLine'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
+Bundle 'ervandew/supertab'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'godlygeek/tabular'
+Bundle 'mhinz/vim-startify'
+Bundle 'scrooloose/nerdtree'
+Bundle 'sjl/gundo.vim'
+Bundle 'tomtom/shymenu_vim'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-repeat'
-Bundle 'mhinz/vim-startify'
 Bundle 'tpope/vim-surround'
-Bundle 'fholgado/minibufexpl.vim'
 
 set encoding=utf-8
 scriptencoding utf-8
@@ -46,32 +47,33 @@ set gdefault
 set smartcase
 
 " Indenting options
-set tabstop=4
-set shiftwidth=4
-set shiftround
-set expandtab
-set softtabstop=4
 set autoindent
+set expandtab
+set shiftround
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 
 " Formatting options
-set number
-set wrap
-set linebreak
-set nolist
-set textwidth=0
-set wrapmargin=0
 set colorcolumn=80
+set linebreak
 set list
 set listchars=trail:.
+set nolist
+set number
+set textwidth=0
+set wrap
+set wrapmargin=0
 
 " Other
 set autochdir
+set foldlevel=99
+set foldmethod=indent
+set go-=T
+set go-=m
+set laststatus=2
 set splitbelow
 set splitright
-set foldmethod=indent
-set foldlevel=99
-set go-=T
-set laststatus=2
 
 " Best character I've found so far
 let g:indentLine_char = '⁞'
@@ -115,7 +117,7 @@ au GUIEnter * set vb t_vb=
 if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
-    set lines=60 columns=90
+    set lines=62 columns=90
     winpos 0 0
 else
     " This is console Vim.
