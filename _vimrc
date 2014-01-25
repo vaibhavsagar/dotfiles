@@ -33,23 +33,27 @@ set background=light
 colorscheme solarized
 filetype plugin indent on
 
+" General
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
-set lazyredraw
-
-set gdefault
-set smartcase
-
 set nobackup
 set noswapfile
 set pastetoggle=<F2>
+set lazyredraw
 
+" Search options
+set gdefault
+set smartcase
+
+" Indenting options
 set tabstop=4
 set shiftwidth=4
+set shiftround
 set expandtab
 set softtabstop=4
 set autoindent
 
+" Formatting options
 set number
 set wrap
 set linebreak
@@ -57,10 +61,10 @@ set nolist
 set textwidth=0
 set wrapmargin=0
 set colorcolumn=80
-
 set list
 set listchars=trail:.
 
+" Other
 set autochdir
 set splitbelow
 set splitright
@@ -69,24 +73,29 @@ set foldlevel=99
 set go-=T
 set laststatus=2
 
+" Best character I've found so far
 let g:indentLine_char = '⁞'
 
+" No need for fancy separators
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
+" Toggles
 nmap <silent> <Leader>il :IndentLinesToggle<CR>
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
 
 
+" MBE mappings
 nmap <silent> <Leader>mt :MBEToggle<CR>
 nmap <silent> <Leader>mn :MBEbn<CR>
 nmap <silent> <Leader>mp :MBEbp<CR>
 nmap <silent> <Leader>mf :MBEbf<CR>
 nmap <silent> <Leader>mb :MBEbb<CR>
 
+" Tabularize mappings
 nmap <Leader>t :Tab<Space>/
 vmap <Leader>t :Tab<Space>/
 
@@ -96,8 +105,10 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+" Make Gundo play nice with Python 3
 let g:gundo_prefer_python3 = 1
 
+" I don't like beeping
 set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
 
