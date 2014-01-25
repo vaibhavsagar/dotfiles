@@ -69,7 +69,7 @@ set foldlevel=99
 set go-=T
 set laststatus=2
 
-let g:indentLine_char = '¦'
+let g:indentLine_char = '⁞'
 
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
