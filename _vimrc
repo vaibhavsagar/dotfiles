@@ -101,14 +101,18 @@ nmap <silent> <Leader>mb :MBEbb<CR>
 nmap <Leader>t :Tab<Space>/
 vmap <Leader>t :Tab<Space>/
 
+" Clear highlighting
+nmap <Leader>no :nohl<CR>
+
 let g:UltiSnipsSnippetDirectories = ["snippets"]
 let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
-" Make Gundo play nice with Python 3
+" Gundo settings
 let g:gundo_prefer_python3 = 1
+let g:gundo_width = 30
 
 " I don't like beeping
 set noeb vb t_vb=
@@ -117,7 +121,7 @@ au GUIEnter * set vb t_vb=
 if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
-    set lines=62 columns=90
+    set lines=62 columns=100
     winpos 0 0
 else
     " This is console Vim.
