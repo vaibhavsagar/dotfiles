@@ -20,8 +20,8 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'mhinz/vim-startify'
 Bundle 'scrooloose/nerdtree'
-Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'sjl/gundo.vim'
 Bundle 'tomtom/shymenu_vim'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-repeat'
@@ -102,7 +102,7 @@ au GUIEnter * set vb t_vb=
 if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
-    set lines=62 columns=100
+    set lines=62 columns=85
     winpos 0 0
 else
     " This is console Vim.
@@ -126,7 +126,6 @@ let g:airline_right_alt_sep = ''
 " Syntastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1 " Put errors on left side
-let g:syntastic_quiet_warnings = 1 " Only errors, not warnings please
 let g:syntastic_auto_loc_list = 2 " Only show errors when I ask
 let g:syntastic_python_checkers=['flake8']
 
