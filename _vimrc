@@ -21,6 +21,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'mhinz/vim-startify'
 Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
+Bundle 'scrooloose/syntastic'
 Bundle 'tomtom/shymenu_vim'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-repeat'
@@ -75,20 +76,10 @@ set laststatus=2
 set splitbelow
 set splitright
 
-" Best character I've found so far
-let g:indentLine_char = '⁞'
-
-" No need for fancy separators
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-
 " Toggles
 nmap <silent> <Leader>il :IndentLinesToggle<CR>
 nmap <silent> <Leader>nt :NERDTreeToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
-
 
 " MBE mappings
 nmap <silent> <Leader>mt :MBEToggle<CR>
@@ -103,16 +94,6 @@ vmap <Leader>t :Tab<Space>/
 
 " Clear highlighting
 nmap <Leader>no :nohl<CR>
-
-let g:UltiSnipsSnippetDirectories = ["snippets"]
-let g:UltiSnipsRemoveSelectModeMappings = 0
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" Gundo settings
-let g:gundo_prefer_python3 = 1
-let g:gundo_width = 30
 
 " I don't like beeping
 set noeb vb t_vb=
@@ -132,6 +113,33 @@ else
         set columns=85
     endif
 endif
+
+" Best character I've found so far
+let g:indentLine_char = '⁞'
+
+" Airline
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
+" Syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_enable_signs = 1 " Put errors on left side
+let g:syntastic_quiet_warnings = 1 " Only errors, not warnings please
+let g:syntastic_auto_loc_list = 2 " Only show errors when I ask
+let g:syntastic_python_checkers=['flake8']
+
+" Ultisnips
+let g:UltiSnipsSnippetDirectories = ["snippets"]
+let g:UltiSnipsRemoveSelectModeMappings = 0
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Gundo
+let g:gundo_prefer_python3 = 1
+let g:gundo_width = 30
 
 set diffexpr=MyDiff()
 function MyDiff()
