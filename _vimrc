@@ -4,7 +4,6 @@ set rtp+=~/vimfiles/bundle/vundle/
 call vundle#rc("$HOME/vimfiles/bundle")
 
 source $VIMRUNTIME/mswin.vim
-behave mswin
 
 " let Vundle manage Vundle
 " required!
@@ -34,7 +33,7 @@ colorscheme solarized
 filetype plugin indent on
 
 " General
-set backspace=indent,eol,start
+set backspace=indent,eol,start whichwrap+=<,>,[,]
 set hidden
 set history=1000         " remember more commands and search history
 set incsearch            " do incremental searching
