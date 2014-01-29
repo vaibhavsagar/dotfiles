@@ -3,14 +3,12 @@ filetype off " For Vundle
 set rtp+=~/vimfiles/bundle/vundle/
 call vundle#rc("$HOME/vimfiles/bundle")
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
 Bundle 'SirVer/ultisnips'
 Bundle 'Yggdroot/indentLine'
 Bundle 'altercation/vim-colors-solarized'
@@ -36,6 +34,11 @@ colorscheme solarized
 filetype plugin indent on
 
 " General
+set mouse=a
+set backspace=indent,eol,start
+set ruler                " show the cursor position all the time
+set showcmd              " display incomplete commands
+set incsearch            " do incremental searching
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
 set nobackup
@@ -102,7 +105,7 @@ au GUIEnter * set vb t_vb=
 if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
-    set lines=62 columns=85
+    set lines=62 columns=90
     winpos 0 0
 else
     " This is console Vim.
