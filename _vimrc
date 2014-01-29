@@ -34,17 +34,18 @@ colorscheme solarized
 filetype plugin indent on
 
 " General
-set mouse=a
 set backspace=indent,eol,start
-set ruler                " show the cursor position all the time
-set showcmd              " display incomplete commands
-set incsearch            " do incremental searching
+set hidden
 set history=1000         " remember more commands and search history
-set undolevels=1000      " use many muchos levels of undo
+set incsearch            " do incremental searching
+set lazyredraw
+set mouse=a
 set nobackup
 set noswapfile
 set pastetoggle=<F2>
-set lazyredraw
+set ruler                " show the cursor position all the time
+set showcmd              " display incomplete commands
+set undolevels=1000      " use many muchos levels of undo
 
 " Search options
 set gdefault
