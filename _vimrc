@@ -47,6 +47,7 @@ set undolevels=1000      " use many muchos levels of undo
 
 " Search options
 set gdefault
+set hlsearch
 set incsearch            " do incremental searching
 set smartcase
 
