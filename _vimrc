@@ -36,7 +36,6 @@ filetype plugin indent on
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set hidden
 set history=1000         " remember more commands and search history
-set incsearch            " do incremental searching
 set lazyredraw
 set mouse=a
 set nobackup
@@ -48,6 +47,7 @@ set undolevels=1000      " use many muchos levels of undo
 
 " Search options
 set gdefault
+set incsearch            " do incremental searching
 set smartcase
 
 " Indenting options
