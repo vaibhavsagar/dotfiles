@@ -107,14 +107,6 @@ if has("gui_running")
     " Maximize gvim window.
     set lines=62 columns=90
     winpos 0 0
-else
-    " This is console Vim.
-    if exists("+lines")
-        set lines=50
-    endif
-    if exists("+columns")
-        set columns=85
-    endif
 endif
 
 " Best character I've found so far
