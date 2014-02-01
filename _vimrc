@@ -7,13 +7,13 @@ source $VIMRUNTIME/mswin.vim
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
 Bundle 'SirVer/ultisnips'
 Bundle 'Yggdroot/indentLine'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'mhinz/vim-startify'
 Bundle 'scrooloose/nerdtree'
