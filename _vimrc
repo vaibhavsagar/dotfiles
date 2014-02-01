@@ -108,6 +108,8 @@ if has("gui_running")
     " Maximize gvim window.
     set lines=62 columns=90
     winpos 0 0
+else
+    set t_ut=
 endif
 
 " Best character I've found so far
