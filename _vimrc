@@ -64,7 +64,6 @@ set colorcolumn=80
 set linebreak
 set list
 set listchars=trail:.
-set nolist
 set number
 set textwidth=0
 set wrap
