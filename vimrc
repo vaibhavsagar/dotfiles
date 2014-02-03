@@ -80,24 +80,24 @@ set splitbelow
 set splitright
 
 " Toggles
-nmap <silent> <Leader>il :IndentLinesToggle<CR>
-nmap <silent> <Leader>nt :NERDTreeToggle<CR>
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <silent> <Leader>il :IndentLinesToggle<CR>
+nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>mt :MBEToggle<CR>
+nnoremap <silent> <F5> :GundoToggle<CR>
 
 " MBE mappings
-nmap <silent> <Leader>mt :MBEToggle<CR>
-nmap <silent> <Leader>mn :MBEbn<CR>
-nmap <silent> <Leader>mp :MBEbp<CR>
-nmap <silent> <Leader>mf :MBEbf<CR>
-nmap <silent> <Leader>mb :MBEbb<CR>
+nnoremap <silent> <Leader>mn :MBEbn<CR>
+nnoremap <silent> <Leader>mp :MBEbp<CR>
+nnoremap <silent> <Leader>mf :MBEbf<CR>
+nnoremap <silent> <Leader>mb :MBEbb<CR>
 
 " Tabularize mappings
-nmap <Leader>t :Tab<Space>/
-vmap <Leader>t :Tab<Space>/
+nnoremap <Leader>t :Tab<Space>/
+vnoremap <Leader>t :Tab<Space>/
 
 " Other mappings
-nmap <Leader>no :nohl<CR>
-nmap <Leader>c  :close<CR>
+nnoremap <Leader>no :nohl<CR>
+nnoremap <Leader>c  :close<CR>
 
 " I don't like beeping
 set noeb vb t_vb=
