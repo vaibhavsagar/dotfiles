@@ -95,8 +95,9 @@ nmap <silent> <Leader>mb :MBEbb<CR>
 nmap <Leader>t :Tab<Space>/
 vmap <Leader>t :Tab<Space>/
 
-" Clear highlighting
+" Other mappings
 nmap <Leader>no :nohl<CR>
+nmap <Leader>c  :close<CR>
 
 " I don't like beeping
 set noeb vb t_vb=
