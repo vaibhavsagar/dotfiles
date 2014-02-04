@@ -62,8 +62,6 @@ set tabstop=4
 " Formatting options
 set colorcolumn=80
 set linebreak
-set list
-set listchars=trail:.
 set number
 set textwidth=0
 set wrap
@@ -140,3 +138,4 @@ let g:gundo_width = 30
 
 " AutoCmds
 autocmd BufWritePost _vimrc source $MYVIMRC
+au BufRead,BufNewFile *.md set filetype=markdown
