@@ -35,6 +35,7 @@ filetype plugin indent on
 
 " General
 set backspace=indent,eol,start whichwrap+=<,>,[,]
+set completeopt=menuone,longest,preview
 set hidden
 set history=1000         " remember more commands and search history
 set lazyredraw
