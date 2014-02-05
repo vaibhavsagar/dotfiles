@@ -15,6 +15,7 @@ Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
+Bundle 'davidhalter/jedi-vim'
 Bundle 'mhinz/vim-startify'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -135,6 +136,10 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " Gundo
 let g:gundo_prefer_python3 = 1
 let g:gundo_width = 30
+
+" Jedi
+let g:jedi#force_py_version = 3
+let g:jedi#auto_vim_configuration = 0
 
 " AutoCmds
 autocmd BufWritePost _vimrc source $MYVIMRC
