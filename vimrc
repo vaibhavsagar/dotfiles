@@ -24,6 +24,7 @@ Bundle 'tomtom/shymenu_vim'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/pdc.vim'
 
 set encoding=utf-8
 scriptencoding utf-8
