@@ -26,17 +26,17 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/pdc.vim'
 
-set encoding=utf-8
-scriptencoding utf-8
-set guifont=Consolas:h10
-syntax enable
-set background=light
 colorscheme solarized
 filetype plugin indent on
+scriptencoding utf-8
+syntax enable
 
 " General
+set background=light
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set completeopt=menuone,longest,preview
+set encoding=utf-8
+set guifont=Consolas:h10
 set hidden
 set history=1000         " remember more commands and search history
 set lazyredraw
