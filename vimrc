@@ -86,12 +86,6 @@ nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
 nnoremap <silent> <Leader>mt :MBEToggle<CR>
 nnoremap <silent> <F5> :GundoToggle<CR>
 
-" MBE mappings
-nnoremap <silent> <Leader>mn :MBEbn<CR>
-nnoremap <silent> <Leader>mp :MBEbp<CR>
-nnoremap <silent> <Leader>mf :MBEbf<CR>
-nnoremap <silent> <Leader>mb :MBEbb<CR>
-
 " Tabularize mappings
 nnoremap <Leader>t :Tab<Space>/
 vnoremap <Leader>t :Tab<Space>/
