@@ -22,6 +22,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
 Bundle 'tomtom/shymenu_vim'
 Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/pdc.vim'
@@ -138,4 +139,3 @@ let g:jedi#auto_vim_configuration = 0
 
 " AutoCmds
 autocmd BufWritePost _vimrc source $MYVIMRC
-au BufRead,BufNewFile *.md set filetype=markdown
