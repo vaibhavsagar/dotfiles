@@ -28,7 +28,6 @@ Bundle 'vim-scripts/pdc.vim'
 
 colorscheme solarized
 filetype plugin indent on
-scriptencoding utf-8
 syntax enable
 
 " General
