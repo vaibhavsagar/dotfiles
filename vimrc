@@ -27,24 +27,26 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/pdc.vim'
 
+" Display
 colorscheme solarized
 filetype plugin indent on
+set background=light
+set guifont=Consolas:h10
+set lazyredraw
+set number
+set ruler                " show the cursor position all the time
+set showcmd              " display incomplete commands
 syntax enable
 
 " General
-set background=light
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set completeopt=menuone,longest,preview
 set encoding=utf-8
-set guifont=Consolas:h10
 set hidden
 set history=1000         " remember more commands and search history
-set lazyredraw
 set mouse=a
 set nobackup
 set noswapfile
-set ruler                " show the cursor position all the time
-set showcmd              " display incomplete commands
 set undolevels=1000      " use many muchos levels of undo
 
 " Search options
@@ -64,7 +66,6 @@ set tabstop=4
 " Formatting options
 set colorcolumn=80
 set linebreak
-set number
 set textwidth=0
 set wrap
 set wrapmargin=0
