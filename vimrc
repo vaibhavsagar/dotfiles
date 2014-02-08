@@ -43,7 +43,6 @@ set lazyredraw
 set mouse=a
 set nobackup
 set noswapfile
-set pastetoggle=<F2>
 set ruler                " show the cursor position all the time
 set showcmd              " display incomplete commands
 set undolevels=1000      " use many muchos levels of undo
@@ -77,8 +76,6 @@ set foldmethod=indent
 set go-=T
 set go-=m
 set laststatus=2
-set splitbelow
-set splitright
 
 " Toggles
 nnoremap <silent> <F3> :IndentLinesToggle<CR>
@@ -116,6 +113,14 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
+" Gundo
+let g:gundo_prefer_python3 = 1
+let g:gundo_width = 30
+
+" Jedi
+let g:jedi#force_py_version = 3
+let g:jedi#auto_vim_configuration = 0
+
 " Syntastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1 " Put errors on left side
@@ -129,13 +134,5 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
-" Gundo
-let g:gundo_prefer_python3 = 1
-let g:gundo_width = 30
-
-" Jedi
-let g:jedi#force_py_version = 3
-let g:jedi#auto_vim_configuration = 0
-
 " AutoCmds
-autocmd BufWritePost _vimrc source $MYVIMRC
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
