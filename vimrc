@@ -81,10 +81,10 @@ set splitbelow
 set splitright
 
 " Toggles
-nnoremap <silent> <Leader>il :IndentLinesToggle<CR>
-nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
-nnoremap <silent> <Leader>mt :MBEToggle<CR>
+nnoremap <silent> <F3> :IndentLinesToggle<CR>
+nnoremap <silent> <F4> :NERDTreeToggle<CR>
 nnoremap <silent> <F5> :GundoToggle<CR>
+nnoremap <silent> <F6> :MBEToggle<CR>
 
 " Tabularize mappings
 nnoremap <Leader>t :Tab<Space>/
