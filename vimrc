@@ -5,17 +5,15 @@ call vundle#rc("$HOME/vimfiles/bundle")
 
 source $VIMRUNTIME/mswin.vim
 
-" let Vundle manage Vundle
-" required!
 Bundle 'SirVer/ultisnips'
 Bundle 'Yggdroot/indentLine'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
+Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'mhinz/vim-startify'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -25,6 +23,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/pdc.vim'
 
 " Display
@@ -49,13 +48,13 @@ set nobackup
 set noswapfile
 set undolevels=1000      " use many muchos levels of undo
 
-" Search options
+" Search
 set gdefault
 set hlsearch
 set incsearch            " do incremental searching
 set smartcase
 
-" Indenting options
+" Indenting
 set autoindent
 set expandtab
 set shiftround
@@ -63,7 +62,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-" Formatting options
+" Formatting
 set colorcolumn=80
 set linebreak
 set textwidth=0
@@ -79,10 +78,10 @@ set go-=m
 set laststatus=2
 
 " Toggles
-nnoremap <silent> <F3> :IndentLinesToggle<CR>
+nnoremap <silent> <F3> :MBEToggle<CR>
 nnoremap <silent> <F4> :NERDTreeToggle<CR>
 nnoremap <silent> <F5> :GundoToggle<CR>
-nnoremap <silent> <F6> :MBEToggle<CR>
+nnoremap <silent> <F6> :IndentLinesToggle<CR>
 
 " Tabularize mappings
 nnoremap <Leader>t :Tab<Space>/
