@@ -131,7 +131,6 @@ let g:syntastic_python_checkers=['flake8']
 " Ultisnips
 let g:UltiSnipsSnippetDirectories = ["snippets"]
 let g:UltiSnipsRemoveSelectModeMappings = 0
-let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
