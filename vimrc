@@ -106,7 +106,7 @@ else
 endif
 
 " indentLine
-let g:indentLine_char = '⁞'
+let g:indentLine_char = '¦'
 
 " Airline
 let g:airline_left_sep = ''
