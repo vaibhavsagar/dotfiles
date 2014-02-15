@@ -15,6 +15,7 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'mhinz/vim-startify'
+Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
@@ -129,8 +130,10 @@ let g:syntastic_auto_loc_list = 2 " Only show errors when I ask
 let g:syntastic_python_checkers=['flake8']
 
 " Ultisnips
+let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsSnippetDirectories = ["snippets"]
 let g:UltiSnipsRemoveSelectModeMappings = 0
+let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
