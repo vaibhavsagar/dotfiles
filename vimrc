@@ -34,6 +34,7 @@ filetype plugin indent on
 set background=light
 set guifont=Consolas:h10
 set lazyredraw
+set linespace=0
 set number
 set ruler                " show the cursor position all the time
 set showcmd              " display incomplete commands
@@ -107,7 +108,7 @@ else
 endif
 
 " indentLine
-let g:indentLine_char = '¦'
+let g:indentLine_char = '│'
 
 " Airline
 let g:airline_left_sep = ''
