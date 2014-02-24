@@ -14,11 +14,11 @@ Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
+Bundle 'mbbill/undotree'
 Bundle 'mhinz/vim-startify'
 Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'sjl/gundo.vim'
 Bundle 'tomtom/shymenu_vim'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-fugitive'
@@ -83,7 +83,7 @@ set laststatus=2
 " Toggles
 nnoremap <silent> <F3> :MBEToggle<CR>
 nnoremap <silent> <F4> :NERDTreeToggle<CR>
-nnoremap <silent> <F5> :GundoToggle<CR>
+nnoremap <silent> <F5> :UndotreeToggle<CR>
 nnoremap <silent> <F6> :IndentLinesToggle<CR>
 
 " Tabularize mappings
@@ -101,7 +101,7 @@ au GUIEnter * set vb t_vb=
 if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
-    set lines=62 columns=90
+    set lines=67 columns=90
     winpos 0 0
 else
     set t_ut=
@@ -115,10 +115,6 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
-
-" Gundo
-let g:gundo_prefer_python3 = 1
-let g:gundo_width = 30
 
 " Jedi
 let g:jedi#force_py_version = 3
@@ -137,6 +133,9 @@ let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Undotree
+let g:undotree_SetFocusWhenToggle = 1
 
 " AutoCmds
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
