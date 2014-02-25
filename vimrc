@@ -14,6 +14,8 @@ Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
+Bundle 'kana/vim-textobj-indent'
+Bundle 'kana/vim-textobj-user'
 Bundle 'mbbill/undotree'
 Bundle 'mhinz/vim-startify'
 Bundle 'ntpeters/vim-better-whitespace'
@@ -44,6 +46,7 @@ syntax enable
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set completeopt=menuone,longest,preview
 set encoding=utf-8
+set fileencoding=utf-8
 set hidden
 set history=1000         " remember more commands and search history
 set mouse=a
