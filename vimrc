@@ -35,6 +35,7 @@ colorscheme solarized
 filetype plugin indent on
 set background=light
 set guifont=Consolas:h10
+set go=cegrL
 set lazyredraw
 set linespace=0
 set number
@@ -79,8 +80,6 @@ set wrapmargin=0
 set autochdir
 set foldlevel=99
 set foldmethod=indent
-set go-=T
-set go-=m
 set laststatus=2
 
 " Toggles
@@ -131,7 +130,7 @@ let g:syntastic_python_checkers=['flake8']
 
 " Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsSnippetDirectories = ["snippets"]
+let g:UltiSnipsSnippetDirectories = ["mysnippets"]
 let g:UltiSnipsRemoveSelectModeMappings = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
