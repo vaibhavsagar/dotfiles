@@ -30,12 +30,27 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/pdc.vim'
 
+" I don't like beeping
+set noeb vb t_vb=
+au GUIEnter * set vb t_vb=
+
+if has("gui_running")
+    " GUI is running or is about to start.
+    " Maximize gvim window.
+    set lines=67 columns=90
+    winpos 0 0
+else
+    set t_ut=
+endif
+
 " Display
 colorscheme solarized
 filetype plugin indent on
 set background=light
+set colorcolumn=80
 set guifont=Consolas:h10
 set go=cegrL
+set laststatus=2
 set lazyredraw
 set linespace=0
 set number
@@ -43,7 +58,24 @@ set ruler                " show the cursor position all the time
 set showcmd              " display incomplete commands
 syntax enable
 
+" Folding
+set foldlevel=99
+set foldmethod=indent
+
+" Formatting
+set autoindent
+set expandtab
+set linebreak
+set shiftround
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set textwidth=0
+set wrap
+set wrapmargin=0
+
 " General
+set autochdir
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set completeopt=menuone,longest,preview
 set encoding=utf-8
@@ -61,53 +93,15 @@ set hlsearch
 set incsearch            " do incremental searching
 set smartcase
 
-" Indenting
-set autoindent
-set expandtab
-set shiftround
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-
-" Formatting
-set colorcolumn=80
-set linebreak
-set textwidth=0
-set wrap
-set wrapmargin=0
-
-" Other
-set autochdir
-set foldlevel=99
-set foldmethod=indent
-set laststatus=2
-
 " Toggles
 nnoremap <silent> <F3> :MBEToggle<CR>
 nnoremap <silent> <F4> :NERDTreeToggle<CR>
 nnoremap <silent> <F5> :UndotreeToggle<CR>
 nnoremap <silent> <F6> :IndentLinesToggle<CR>
 
-" Tabularize mappings
-nnoremap <Leader>t :Tab<Space>/
-vnoremap <Leader>t :Tab<Space>/
-
 " Other mappings
 nnoremap <Leader>no :nohl<CR>
 nnoremap <Leader>c  :close<CR>
-
-" I don't like beeping
-set noeb vb t_vb=
-au GUIEnter * set vb t_vb=
-
-if has("gui_running")
-    " GUI is running or is about to start.
-    " Maximize gvim window.
-    set lines=67 columns=90
-    winpos 0 0
-else
-    set t_ut=
-endif
 
 " indentLine
 let g:indentLine_char = '│'
@@ -127,6 +121,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1 " Put errors on left side
 let g:syntastic_auto_loc_list = 2 " Only show errors when I ask
 let g:syntastic_python_checkers=['flake8']
+
+" Tabularize
+nnoremap <Leader>t :Tab<Space>/
+vnoremap <Leader>t :Tab<Space>/
 
 " Ultisnips
 let g:UltiSnipsUsePythonVersion = 3
