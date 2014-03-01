@@ -100,8 +100,9 @@ nnoremap <silent> <F5> :UndotreeToggle<CR>
 nnoremap <silent> <F6> :IndentLinesToggle<CR>
 
 " Other mappings
-nnoremap <Leader>no :nohl<CR>
 nnoremap <Leader>c  :close<CR>
+nnoremap <Leader>no :nohl<CR>
+vnoremap <Leader>ri <gv>
 
 " indentLine
 let g:indentLine_char = '│'
