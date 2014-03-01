@@ -5,6 +5,7 @@ call vundle#rc("$HOME/vimfiles/bundle")
 
 source $VIMRUNTIME/mswin.vim
 
+" Bundles
 Bundle 'SirVer/ultisnips'
 Bundle 'Yggdroot/indentLine'
 Bundle 'altercation/vim-colors-solarized'
@@ -30,10 +31,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/pdc.vim'
 
-" I don't like beeping
-set noeb vb t_vb=
+" Display
 au GUIEnter * set vb t_vb=
-
+colorscheme solarized
+filetype plugin indent on
 if has("gui_running")
     " GUI is running or is about to start.
     " Maximize gvim window.
@@ -42,10 +43,6 @@ if has("gui_running")
 else
     set t_ut=
 endif
-
-" Display
-colorscheme solarized
-filetype plugin indent on
 set background=light
 set colorcolumn=80
 set guifont=Consolas:h10
@@ -53,6 +50,7 @@ set go=cegrL
 set laststatus=2
 set lazyredraw
 set linespace=0
+set noeb vb t_vb=
 set number
 set numberwidth=1
 set ruler                " show the cursor position all the time
@@ -102,6 +100,8 @@ nnoremap <silent> <F6> :IndentLinesToggle<CR>
 
 " Other mappings
 nnoremap <Leader>c  :close<CR>
+nnoremap <Leader>no :nohl<CR>
+vnoremap <Leader>ri <gv>
 
 " indentLine
 let g:indentLine_char = '│'
