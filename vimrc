@@ -54,6 +54,7 @@ set laststatus=2
 set lazyredraw
 set linespace=0
 set number
+set numberwidth=1
 set ruler                " show the cursor position all the time
 set showcmd              " display incomplete commands
 syntax enable
