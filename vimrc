@@ -116,6 +116,12 @@ let g:airline_right_alt_sep = ''
 let g:jedi#force_py_version = 3
 let g:jedi#auto_vim_configuration = 0
 
+" Startify
+let g:startify_skiplist = [
+    \ escape($VIMRUNTIME .'\doc', '\'),
+    \ escape('bundle\.*\doc', '\')
+    \ ]
+
 " Syntastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1 " Put errors on left side
@@ -139,3 +145,4 @@ let g:undotree_SetFocusWhenToggle = 1
 
 " AutoCmds
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
+autocmd FileType startify setlocal buftype=
