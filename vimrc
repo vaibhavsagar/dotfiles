@@ -119,6 +119,7 @@ let g:jedi#auto_vim_configuration = 0
 " Startify
 let g:startify_skiplist = [
     \ escape($VIMRUNTIME .'\doc', '\'),
+    \ escape('AppData\Local\Temp', '\'),
     \ escape('bundle\.*\doc', '\')
     \ ]
 
