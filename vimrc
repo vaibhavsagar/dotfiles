@@ -15,6 +15,7 @@ Bundle 'ervandew/supertab'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
+Bundle 'honza/vim-snippets'
 Bundle 'kana/vim-textobj-indent'
 Bundle 'kana/vim-textobj-user'
 Bundle 'mbbill/undotree'
@@ -134,9 +135,8 @@ nnoremap <Leader>t :Tab<Space>/
 vnoremap <Leader>t :Tab<Space>/
 
 " Ultisnips
-let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsSnippetDirectories = ["mysnippets"]
-let g:UltiSnipsRemoveSelectModeMappings = 0
+let g:UltiSnipsUsePythonVersion=3
+let g:UltiSnipsRemoveSelectModeMappings=0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
