@@ -107,14 +107,14 @@ vnoremap <Leader>ri <gv>
 let g:indentLine_char = '│'
 
 " Airline
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+let g:airline_left_sep=''
+let g:airline_left_alt_sep=''
+let g:airline_right_sep=''
+let g:airline_right_alt_sep=''
 
 " Jedi
-let g:jedi#force_py_version = 3
-let g:jedi#auto_vim_configuration = 0
+let g:jedi#force_py_version=3
+let g:jedi#auto_vim_configuration=0
 
 " Startify
 let g:startify_skiplist = [
@@ -124,9 +124,9 @@ let g:startify_skiplist = [
     \ ]
 
 " Syntastic
-let g:syntastic_check_on_open = 1
-let g:syntastic_enable_signs = 1 " Put errors on left side
-let g:syntastic_auto_loc_list = 2 " Only show errors when I ask
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1 " Put errors on left side
+let g:syntastic_auto_loc_list=2 " Only show errors when I ask
 let g:syntastic_python_checkers=['flake8']
 
 " Tabularize
@@ -142,7 +142,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Undotree
-let g:undotree_SetFocusWhenToggle = 1
+let g:undotree_SetFocusWhenToggle=1
 
 " AutoCmds
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
