@@ -99,10 +99,12 @@ nnoremap <silent> <F4> :NERDTreeToggle<CR>
 nnoremap <silent> <F5> :UndotreeToggle<CR>
 nnoremap <silent> <F6> :IndentLinesToggle<CR>
 
-" Other mappings
+" Other
 nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>no :nohl<CR>
-vnoremap <Leader>ri <gv>
+nnoremap j gj
+nnoremap k gk
+
 
 " indentLine
 let g:indentLine_char = '│'
