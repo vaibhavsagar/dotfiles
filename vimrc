@@ -21,7 +21,6 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'mbbill/undotree'
 Bundle 'mhinz/vim-startify'
 Bundle 'ntpeters/vim-better-whitespace'
-Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tomtom/shymenu_vim'
 Bundle 'tpope/vim-dispatch'
@@ -30,7 +29,8 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-scripts/pdc.vim'
+Bundle 'tpope/vim-vinegar'
+Bundle 'vim-pandoc/vim-pandoc-syntax'
 
 " Display
 au GUIEnter * set vb t_vb=
@@ -95,9 +95,8 @@ set smartcase
 
 " Toggles
 nnoremap <silent> <F3> :MBEToggle<CR>
-nnoremap <silent> <F4> :NERDTreeToggle<CR>
+nnoremap <silent> <F4> :IndentLinesToggle<CR>
 nnoremap <silent> <F5> :UndotreeToggle<CR>
-nnoremap <silent> <F6> :IndentLinesToggle<CR>
 
 " Other
 nnoremap <Leader>c  :close<CR>
@@ -150,4 +149,3 @@ let g:undotree_SetFocusWhenToggle=1
 
 " AutoCmds
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
-autocmd FileType startify setlocal buftype=
