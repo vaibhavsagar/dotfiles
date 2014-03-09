@@ -103,7 +103,9 @@ nnoremap <silent> <F6> :IndentLinesToggle<CR>
 nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>no :nohl<CR>
 nnoremap j gj
+nnoremap <Down> gj
 nnoremap k gk
+nnoremap <Up> gk
 
 
 " indentLine
