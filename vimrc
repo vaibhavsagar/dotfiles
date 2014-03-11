@@ -52,6 +52,7 @@ set laststatus=2
 set lazyredraw
 set linespace=0
 set noeb vb t_vb=
+set noshowmode
 set number
 set numberwidth=1
 set ruler                " show the cursor position all the time
@@ -85,7 +86,6 @@ set history=1000         " remember more commands and search history
 set mouse=a
 set nobackup
 set noswapfile
-set undolevels=1000      " use many muchos levels of undo
 
 " Search
 set gdefault
