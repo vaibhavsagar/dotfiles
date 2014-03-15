@@ -37,8 +37,6 @@ au GUIEnter * set vb t_vb=
 colorscheme solarized
 filetype plugin indent on
 if has("gui_running")
-    " GUI is running or is about to start.
-    " Maximize gvim window.
     set lines=67 columns=90
     winpos 0 0
 else
@@ -55,8 +53,8 @@ set noeb vb t_vb=
 set noshowmode
 set number
 set numberwidth=1
-set ruler                " show the cursor position all the time
-set showcmd              " display incomplete commands
+set ruler
+set showcmd
 syntax enable
 
 " Folding
@@ -82,7 +80,7 @@ set completeopt=menuone,longest,preview
 set encoding=utf-8
 set fileencoding=utf-8
 set hidden
-set history=1000         " remember more commands and search history
+set history=1000
 set mouse=a
 set nobackup
 set noswapfile
@@ -90,7 +88,7 @@ set noswapfile
 " Search
 set gdefault
 set hlsearch
-set incsearch            " do incremental searching
+set incsearch
 set smartcase
 
 " Toggles
