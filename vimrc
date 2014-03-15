@@ -91,6 +91,14 @@ set hlsearch
 set incsearch
 set smartcase
 
+" Remappings
+nnoremap <Down> gj
+nnoremap <Up> gk
+nnoremap j gj
+nnoremap k gk
+nnoremap < <gv
+nnoremap > >gv
+
 " Toggles
 nnoremap <silent> <F3> :MBEToggle<CR>
 nnoremap <silent> <F4> :IndentLinesToggle<CR>
@@ -99,11 +107,6 @@ nnoremap <silent> <F5> :UndotreeToggle<CR>
 " Other
 nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>no :nohl<CR>
-nnoremap j gj
-nnoremap <Down> gj
-nnoremap k gk
-nnoremap <Up> gk
-
 
 " indentLine
 let g:indentLine_char='│'
