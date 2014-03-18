@@ -97,8 +97,8 @@ nnoremap <Down> gj
 nnoremap <Up> gk
 nnoremap j gj
 nnoremap k gk
-nnoremap < <gv
-nnoremap > >gv
+xnoremap < <gv
+xnoremap > >gv
 
 " Toggles
 nnoremap <silent> <F3> :MBEToggle<CR>
