@@ -150,4 +150,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:undotree_SetFocusWhenToggle=1
 
 " AutoCmds
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup vimrcso
+  au!
+  autocmd BufWritePost $MYVIMRC so $MYVIMRC
+augroup END
