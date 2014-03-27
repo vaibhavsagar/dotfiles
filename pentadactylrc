@@ -1,2 +1,4 @@
 colorscheme solarized-light
 au LocationChange about:newtab :normal! o
+map -builtin <C-h> <C-p>
+map -builtin <C-l> <C-n>
