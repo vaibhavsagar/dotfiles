@@ -93,6 +93,7 @@ set incsearch
 set smartcase
 
 " Remappings
+let mapleader="\<Space>"
 nnoremap <Down> gj
 nnoremap <Up> gk
 nnoremap j gj
