@@ -38,6 +38,13 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 " }}}
 
+" AutoCmds {{{
+augroup vimrcso
+    au!
+    autocmd BufWritePost $MYVIMRC so $MYVIMRC
+augroup END
+" }}}
+
 " Display {{{
 au GUIEnter * set vb t_vb=
 colorscheme solarized
@@ -121,7 +128,6 @@ nnoremap <silent> <F5> :UndotreeToggle<CR>
 " Other {{{
 nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>no :nohl<CR>
-nnoremap <Leader>sv :so $MYVIMRC<CR>
 " }}}
 
 " Plugin Configuration {{{
