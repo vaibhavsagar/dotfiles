@@ -5,7 +5,6 @@ set nocompatible
 filetype off " For Vundle
 set rtp+=~/vimfiles/bundle/vundle/
 call vundle#rc("$HOME/vimfiles/bundle")
-
 source $VIMRUNTIME/mswin.vim
 " }}}
 
@@ -131,17 +130,16 @@ nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>no :nohl<CR>
 " }}}
 
-" Plugin Configuration {{{
-
-" IndentLine {{{
-let g:indentLine_char='│'
-" }}}
-
+" Configuration {{{
 " Airline {{{
 let g:airline_left_sep=''
 let g:airline_left_alt_sep=''
 let g:airline_right_sep=''
 let g:airline_right_alt_sep=''
+" }}}
+
+" IndentLine {{{
+let g:indentLine_char='│'
 " }}}
 
 " Jedi {{{
@@ -180,6 +178,5 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " Undotree {{{
 let g:undotree_SetFocusWhenToggle=1
 " }}}
-
 " }}}
 
