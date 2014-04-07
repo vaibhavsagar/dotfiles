@@ -138,6 +138,12 @@ let g:airline_right_sep=''
 let g:airline_right_alt_sep=''
 " }}}
 
+" Fugitive {{{
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+" }}}
+
 " IndentLine {{{
 let g:indentLine_char='│'
 " }}}
