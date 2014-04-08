@@ -163,6 +163,7 @@ let g:startify_skiplist = [
 
 " Syntastic {{{
 let g:syntastic_check_on_open=1
+let g:syntastic_enable_balloons = 1
 let g:syntastic_enable_signs=1 " Put errors on left side
 let g:syntastic_auto_loc_list=2 " Only show errors when I ask
 let g:syntastic_python_checkers=['flake8']
