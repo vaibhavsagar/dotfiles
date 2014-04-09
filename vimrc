@@ -106,6 +106,7 @@ set noswapfile
 set gdefault
 set hlsearch
 set incsearch
+set ignorecase
 set smartcase
 " }}}
 
