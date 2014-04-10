@@ -156,7 +156,7 @@ let g:jedi#auto_vim_configuration=0
 " }}}
 
 " Startify {{{
-let g:startify_skiplist = [
+let g:startify_skiplist=[
     \ escape($VIMRUNTIME .'\doc', '\'),
     \ escape('AppData\Local\Temp', '\'),
     \ escape('bundle\.*\doc', '\')
@@ -165,7 +165,7 @@ let g:startify_skiplist = [
 
 " Syntastic {{{
 let g:syntastic_check_on_open=1
-let g:syntastic_enable_balloons = 1
+let g:syntastic_enable_balloons=1
 let g:syntastic_enable_signs=1 " Put errors on left side
 let g:syntastic_auto_loc_list=2 " Only show errors when I ask
 let g:syntastic_python_checkers=['flake8']
@@ -188,4 +188,3 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:undotree_SetFocusWhenToggle=1
 " }}}
 " }}}
-
