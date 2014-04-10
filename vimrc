@@ -143,6 +143,7 @@ let g:airline_right_alt_sep=''
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gw :Gwrite<CR>
 " }}}
 
 " IndentLine {{{
