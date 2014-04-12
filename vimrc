@@ -187,4 +187,8 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " Undotree {{{
 let g:undotree_SetFocusWhenToggle=1
 " }}}
+
+" Vinegar {{{
+let g:netrw_liststyle=3
+" }}}
 " }}}
