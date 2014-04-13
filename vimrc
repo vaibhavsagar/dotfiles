@@ -128,6 +128,7 @@ nnoremap <silent> <F5> :UndotreeToggle<CR>
 
 " Other {{{
 nnoremap <Leader>c  :close<CR>
+nnoremap <Leader>d  :bd<CR>
 nnoremap <Leader>no :nohl<CR>
 " }}}
 
