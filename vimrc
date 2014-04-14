@@ -47,9 +47,9 @@ augroup END
 
 " Display {{{
 au GUIEnter * set vb t_vb=
-colorscheme solarized
 filetype plugin indent on
 if has("gui_running")
+    colorscheme solarized
     set lines=67 columns=90
     winpos 0 0
 else
