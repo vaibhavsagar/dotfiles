@@ -113,11 +113,12 @@ set smartcase
 " Remappings {{{
 let mapleader="\<Space>"
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-nnoremap <Up> gk
-nnoremap j gj
-nnoremap k gk
-xnoremap < <gv
-xnoremap > >gv
+nnoremap <silent> <Down> gj
+nnoremap <silent> <Up> gk
+nnoremap <silent> j gj
+nnoremap <silent> k gk
+xnoremap <silent> < <gv
+xnoremap <silent> > >gv
 " }}}
 
 " Toggles {{{
