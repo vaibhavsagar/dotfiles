@@ -112,7 +112,7 @@ set smartcase
 
 " Remappings {{{
 let mapleader="\<Space>"
-nnoremap <Down> gj
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 nnoremap <Up> gk
 nnoremap j gj
 nnoremap k gk
@@ -129,7 +129,6 @@ nnoremap <silent> <F5> :UndotreeToggle<CR>
 " Other {{{
 nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>d  :bd<CR>
-nnoremap <Leader>no :nohl<CR>
 " }}}
 
 " Configuration {{{
