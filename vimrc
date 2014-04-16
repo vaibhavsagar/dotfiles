@@ -91,6 +91,7 @@ set wrapmargin=0
 
 " General {{{
 set autochdir
+set autoread
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set completeopt=menuone,longest,preview
 set encoding=utf-8
