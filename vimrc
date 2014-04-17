@@ -22,6 +22,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'justinmk/vim-gtfo'
 Plugin 'kana/vim-textobj-indent'
 Plugin 'kana/vim-textobj-user'
+Plugin 'kien/ctrlp.vim'
 Plugin 'mbbill/undotree'
 Plugin 'mhinz/vim-startify'
 Plugin 'ntpeters/vim-better-whitespace'
@@ -139,6 +140,14 @@ let g:airline_left_sep=''
 let g:airline_left_alt_sep=''
 let g:airline_right_sep=''
 let g:airline_right_alt_sep=''
+" }}}
+
+" CtrlP {{{
+let g:ctrlp_cmd='CtrlPMixed'
+let g:ctrlp_custom_ignore={
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\v\.(exe|so|dll)$',
+    \ }
 " }}}
 
 " Fugitive {{{
