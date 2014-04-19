@@ -13,9 +13,9 @@ Plugin 'SirVer/ultisnips'
 Plugin 'Yggdroot/indentLine'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
+Plugin 'bling/vim-bufferline'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'gmarik/vundle'
 Plugin 'godlygeek/tabular'
 Plugin 'honza/vim-snippets'
@@ -125,7 +125,6 @@ xnoremap <silent> > >gv
 " }}}
 
 " Toggles {{{
-nnoremap <silent> <F3> :MBEToggle<CR>
 nnoremap <silent> <F4> :IndentLinesToggle<CR>
 nnoremap <silent> <F5> :UndotreeToggle<CR>
 " }}}
@@ -141,6 +140,10 @@ let g:airline_left_sep=''
 let g:airline_left_alt_sep=''
 let g:airline_right_sep=''
 let g:airline_right_alt_sep=''
+" }}}
+
+" Bufferline {{{
+let g:bufferline_echo=0
 " }}}
 
 " CtrlP {{{
