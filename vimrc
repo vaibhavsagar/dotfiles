@@ -74,7 +74,7 @@ syntax enable
 
 " Folding {{{
 set foldlevel=99
-set foldmethod=indent
+set foldmethod=marker
 " }}}
 
 " Formatting {{{
