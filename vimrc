@@ -163,6 +163,7 @@ nnoremap <Leader>gw :Gwrite<CR>
 
 " IndentLine {{{
 let g:indentLine_char='│'
+let g:indentLine_fileTypeExclude = ['text', 'markdown']
 " }}}
 
 " Jedi {{{
