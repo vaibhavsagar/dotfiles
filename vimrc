@@ -103,6 +103,7 @@ set mouse=a
 set nobackup
 set noswapfile
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
+set wildmenu
 " }}}
 
 " Search {{{
