@@ -102,6 +102,7 @@ set history=1000
 set mouse=a
 set nobackup
 set noswapfile
+set shellslash
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 set wildmenu
 " }}}
