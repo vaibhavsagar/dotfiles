@@ -2,12 +2,13 @@
 
 " Prologue {{{
 set nocompatible
-filetype off " For Vundle
-set rtp+=~/vimfiles/bundle/vundle/
-call vundle#rc("$HOME/vimfiles/bundle")
 source $VIMRUNTIME/mswin.vim
 " }}}
 
+" Vundle {{{
+filetype off " For Vundle
+set rtp+=~/vimfiles/bundle/vundle/
+call vundle#begin("$HOME/vimfiles/bundle")
 " Plugins {{{
 Plugin 'SirVer/ultisnips'
 Plugin 'Yggdroot/indentLine'
@@ -38,6 +39,9 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-vinegar'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 " }}}
+call vundle#end()
+filetype plugin indent on
+" }}}
 
 " AutoCmds {{{
 augroup vimrcso
@@ -48,7 +52,6 @@ augroup END
 
 " Display {{{
 au GUIEnter * set vb t_vb=
-filetype plugin indent on
 if has("gui_running")
     colorscheme solarized
     set lines=67 columns=100
