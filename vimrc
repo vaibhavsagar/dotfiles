@@ -51,7 +51,7 @@ au GUIEnter * set vb t_vb=
 filetype plugin indent on
 if has("gui_running")
     colorscheme solarized
-    set lines=67 columns=90
+    set lines=67 columns=100
     winpos 0 0
 else
     set t_ut=
