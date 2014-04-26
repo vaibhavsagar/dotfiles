@@ -53,13 +53,13 @@ augroup END
 " Display {{{
 au GUIEnter * set vb t_vb=
 if has("gui_running")
+    set background=light
     colorscheme solarized
     set lines=67 columns=100
     winpos 0 0
 else
     set t_ut=
 endif
-set background=light
 set colorcolumn=80
 set guifont=Consolas:h10
 set go=cegrL
