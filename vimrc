@@ -126,6 +126,8 @@ nnoremap <silent> <Down> gj
 nnoremap <silent> <Up> gk
 nnoremap <silent> j gj
 nnoremap <silent> k gk
+inoremap <silent> <Down> <C-o>gj
+inoremap <silent> <Up> <C-o>gk
 xnoremap <silent> < <gv
 xnoremap <silent> > >gv
 " }}}
