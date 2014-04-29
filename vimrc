@@ -72,6 +72,7 @@ set number
 set numberwidth=1
 set ruler
 set showcmd
+set synmaxcol=240
 syntax enable
 " }}}
 
