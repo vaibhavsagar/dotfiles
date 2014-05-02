@@ -7,8 +7,8 @@ source $VIMRUNTIME/mswin.vim
 
 " Vundle {{{
 filetype off " For Vundle
-set rtp+=~/vimfiles/bundle/vundle/
-call vundle#begin("$HOME/vimfiles/bundle")
+set rtp+=~/.vim/bundle/vundle/
+call vundle#begin("$HOME/.vim/bundle")
 " Plugins {{{
 Plugin 'SirVer/ultisnips'
 Plugin 'Yggdroot/indentLine'
