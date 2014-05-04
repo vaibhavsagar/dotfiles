@@ -78,6 +78,7 @@ syntax enable
 
 " Folding {{{
 set foldlevel=99
+set foldmarker=-^-,-v-
 set foldmethod=marker
 " }}}
 
