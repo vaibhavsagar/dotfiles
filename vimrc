@@ -1,15 +1,15 @@
-" vim:fdm=marker:foldlevel=0:
+" vim:fdm=marker:foldlevel=0:foldmarker=-^-,-v-:
 
-" Prologue {{{
+" Prologue -^-
 set nocompatible
 source $VIMRUNTIME/mswin.vim
-" }}}
+" -v-
 
-" Vundle {{{
+" Vundle -^-
 filetype off " For Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin("$HOME/.vim/bundle")
-" Plugins {{{
+" Plugins -^-
 Plugin 'SirVer/ultisnips'
 Plugin 'Yggdroot/indentLine'
 Plugin 'altercation/vim-colors-solarized'
@@ -38,19 +38,19 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-vinegar'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
-" }}}
+" -v-
 call vundle#end()
 filetype plugin indent on
-" }}}
+" -v-
 
-" AutoCmds {{{
+" AutoCmds -^-
 augroup vimrcso
     au!
     autocmd BufWritePost $MYVIMRC so $MYVIMRC
 augroup END
-" }}}
+" -v-
 
-" Display {{{
+" Display -^-
 au GUIEnter * set vb t_vb=
 if has("gui_running")
     set background=light
@@ -74,15 +74,15 @@ set ruler
 set showcmd
 set synmaxcol=240
 syntax enable
-" }}}
+" -v-
 
-" Folding {{{
+" Folding -^-
 set foldlevel=99
 set foldmarker=-^-,-v-
 set foldmethod=marker
-" }}}
+" -v-
 
-" Formatting {{{
+" Formatting -^-
 set autoindent
 set expandtab
 set linebreak
@@ -93,9 +93,9 @@ set tabstop=4
 set textwidth=0
 set wrap
 set wrapmargin=0
-" }}}
+" -v-
 
-" General {{{
+" General -^-
 set autochdir
 set autoread
 set backspace=indent,eol,start whichwrap+=<,>,[,]
@@ -109,18 +109,18 @@ set nobackup
 set noswapfile
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 set wildmenu
-" }}}
+" -v-
 
-" Search {{{
+" Search -^-
 set gdefault
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 set wrapscan
-" }}}
+" -v-
 
-" Remappings {{{
+" Remappings -^-
 let mapleader="\<Space>"
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 nnoremap <silent> j gj
@@ -131,85 +131,85 @@ inoremap <silent> <Down> <C-o>gj
 inoremap <silent> <Up> <C-o>gk
 xnoremap <silent> < <gv
 xnoremap <silent> > >gv
-" }}}
+" -v-
 
-" Toggles {{{
+" Toggles -^-
 nnoremap <silent> <F4> :IndentLinesToggle<CR>
 nnoremap <silent> <F5> :UndotreeToggle<CR>
-" }}}
+" -v-
 
-" Other {{{
+" Other -^-
 nnoremap <Leader>c  :close<CR>
 nnoremap <Leader>d  :bd<CR>
-" }}}
+" -v-
 
-" Configuration {{{
-" Airline {{{
+" Configuration -^-
+" Airline -^-
 let g:airline_left_sep=''
 let g:airline_left_alt_sep=''
 let g:airline_right_sep=''
 let g:airline_right_alt_sep=''
-" }}}
+" -v-
 
-" Bufferline {{{
+" Bufferline -^-
 let g:bufferline_echo=0
-" }}}
+" -v-
 
-" CtrlP {{{
+" CtrlP -^-
 let g:ctrlp_cmd='CtrlPMixed'
 let g:ctrlp_custom_ignore={
     \ 'dir':  '\v[\/]\.(git|hg|svn)$',
     \ 'file': '\v\.(exe|so|dll)$',
     \ }
-" }}}
+" -v-
 
-" Fugitive {{{
+" Fugitive -^-
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gw :Gwrite<CR>
-" }}}
+" -v-
 
-" IndentLine {{{
+" IndentLine -^-
 let g:indentLine_char='│'
 let g:indentLine_fileTypeExclude=['text', 'markdown']
-" }}}
+" -v-
 
-" Jedi {{{
+" Jedi -^-
 let g:jedi#force_py_version=3
 let g:jedi#auto_vim_configuration=0
-" }}}
+" -v-
 
-" Startify {{{
+" Startify -^-
 let g:startify_skiplist=[
     \ escape($VIMRUNTIME .'\doc', '\'),
     \ escape('AppData\Local\Temp', '\'),
     \ escape('bundle\.*\doc', '\')
     \ ]
-" }}}
+" -v-
 
-" Syntastic {{{
+" Syntastic -^-
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_balloons=1
 let g:syntastic_enable_signs=1 " Put errors on left side
 let g:syntastic_auto_loc_list=2 " Only show errors when I ask
 let g:syntastic_python_checkers=['flake8']
-" }}}
+" -v-
 
-" Tabularize {{{
+" Tabularize -^-
 nnoremap <Leader>t :Tab<Space>/
 vnoremap <Leader>t :Tab<Space>/
-" }}}
+" -v-
 
-" Ultisnips {{{
+" Ultisnips -^-
 let g:UltiSnipsUsePythonVersion=3
 let g:UltiSnipsRemoveSelectModeMappings=0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-" }}}
+" -v-
 
-" Undotree {{{
+" Undotree -^-
 let g:undotree_SetFocusWhenToggle=1
-" }}}
-" }}}
+" -v-
+" -v-
