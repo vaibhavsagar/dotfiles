@@ -165,6 +165,7 @@ let g:ctrlp_custom_ignore={
 " -v-
 
 " Fugitive -^-
+nnoremap <Leader>gb :Gbrowse<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gs :Gstatus<CR>
