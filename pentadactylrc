@@ -1,6 +1,5 @@
 colorscheme solarized-light
 au LocationChange about:newtab :normal! o
-set guioptions+=N
 map -builtin <C-h> <C-p>
 map -builtin <C-l> <C-n>
 map -builtin J <C-d>
