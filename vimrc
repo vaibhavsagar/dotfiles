@@ -139,9 +139,9 @@ nnoremap <silent> <F5> :UndotreeToggle<CR>
 " -v-
 
 " Other -^-
-nnoremap <Leader>b :ls<CR>:b<Space>
-nnoremap <Leader>c :close<CR>
-nnoremap <Leader>d :bd<CR>
+nnoremap <silent> <Leader>b :ls<CR>:b<Space>
+nnoremap <silent> <Leader>c :close<CR>
+nnoremap <silent> <Leader>d :bd<CR>
 " -v-
 
 " Configuration -^-
