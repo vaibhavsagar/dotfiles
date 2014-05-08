@@ -165,11 +165,11 @@ let g:ctrlp_custom_ignore={
 " -v-
 
 " Fugitive -^-
-nnoremap <Leader>gb :Gbrowse<CR>
-nnoremap <Leader>gc :Gcommit<CR>
-nnoremap <Leader>gd :Gdiff<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <silent> <Leader>gb :Gbrowse<CR>
+nnoremap <silent> <Leader>gc :Gcommit<CR>
+nnoremap <silent> <Leader>gd :Gdiff<CR>
+nnoremap <silent> <Leader>gs :Gstatus<CR>
+nnoremap <silent> <Leader>gw :Gwrite<CR>
 " -v-
 
 " IndentLine -^-
