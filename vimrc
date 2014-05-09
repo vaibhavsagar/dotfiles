@@ -114,8 +114,8 @@ set wildmenu
 " Search -^-
 set gdefault
 set hlsearch
-set incsearch
 set ignorecase
+set incsearch
 set smartcase
 set wrapscan
 " -v-
