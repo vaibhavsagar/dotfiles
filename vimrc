@@ -10,6 +10,7 @@ filetype off " For Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin("$HOME/.vim/bundle")
 " Plugins -^-
+Plugin 'Raimondi/delimitMate'
 Plugin 'SirVer/ultisnips'
 Plugin 'Yggdroot/indentLine'
 Plugin 'altercation/vim-colors-solarized'
