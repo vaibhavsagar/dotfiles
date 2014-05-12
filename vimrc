@@ -165,6 +165,10 @@ let g:ctrlp_custom_ignore={
     \ }
 " -v-
 
+" DelimitMate -^-
+let delimitMate_expand_cr=1
+" -v-
+
 " Fugitive -^-
 nnoremap <silent> <Leader>gb :Gbrowse<CR>
 nnoremap <silent> <Leader>gc :Gcommit<CR>
