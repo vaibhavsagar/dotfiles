@@ -167,7 +167,7 @@ let g:ctrlp_custom_ignore={
 
 " DelimitMate -^-
 let delimitMate_expand_cr=1
-let delimitMate_nesting_quotes = ['"']
+let delimitMate_nesting_quotes = ['"', '''']
 " -v-
 
 " Fugitive -^-
