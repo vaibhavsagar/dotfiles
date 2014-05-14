@@ -172,6 +172,7 @@ let delimitMate_nesting_quotes = ['"', '''']
 " -v-
 
 " Fugitive -^-
+nnoremap <Leader>g<Space>    :Git<Space>
 nnoremap <silent> <Leader>gb :Gbrowse<CR>
 nnoremap <silent> <Leader>gc :Gcommit<CR>
 nnoremap <silent> <Leader>gd :Gdiff<CR>
