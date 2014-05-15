@@ -135,12 +135,7 @@ xnoremap <silent> < <gv
 xnoremap <silent> > >gv
 " -v-
 
-" Toggles -^-
-nnoremap <silent> <F4> :IndentLinesToggle<CR>
-nnoremap <silent> <F5> :UndotreeToggle<CR>
-" -v-
-
-" Other -^-
+" Leader -^-
 nnoremap <silent> <Leader>b :ls<CR>:b<Space>
 nnoremap <silent> <Leader>c :close<CR>
 nnoremap <silent> <Leader>d :bd<CR>
@@ -183,6 +178,7 @@ nnoremap <silent> <Leader>gw :Gwrite<CR>
 " IndentLine -^-
 let g:indentLine_char='│'
 let g:indentLine_fileTypeExclude=['text', 'markdown']
+nnoremap <silent> <F4> :IndentLinesToggle<CR>
 " -v-
 
 " Jedi -^-
@@ -221,5 +217,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Undotree -^-
 let g:undotree_SetFocusWhenToggle=1
+nnoremap <silent> <F5> :UndotreeToggle<CR>
 " -v-
 " -v-
