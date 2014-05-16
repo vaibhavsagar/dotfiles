@@ -208,11 +208,11 @@ vnoremap <Leader>t :Tab<Space>/
 " -v-
 
 " Ultisnips -^-
-let g:UltiSnipsUsePythonVersion=3
-let g:UltiSnipsRemoveSelectModeMappings=0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsRemoveSelectModeMappings=0
+let g:UltiSnipsUsePythonVersion=3
 " -v-
 
 " Undotree -^-
