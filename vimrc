@@ -100,7 +100,7 @@ set wrapmargin=0
 " General -^-
 set autochdir
 set autoread
-set backspace=indent,eol,start whichwrap+=<,>,[,]
+set backspace=indent,eol,start
 set completeopt=menuone,longest,preview
 set encoding=utf-8
 set fileencoding=utf-8
@@ -109,6 +109,7 @@ set history=1000
 set mouse=a
 set nobackup
 set noswapfile
+set whichwrap+=<,>,[,]
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 set wildmenu
 " -v-
