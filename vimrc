@@ -111,6 +111,7 @@ set nobackup
 set noswapfile
 set whichwrap+=<,>,[,]
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
+set wildignorecase
 set wildmenu
 " -v-
 
