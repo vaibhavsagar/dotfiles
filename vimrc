@@ -127,10 +127,10 @@ set wrapscan
 " Remappings -^-
 let mapleader="\<Space>"
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-nnoremap <silent> j gj
-nnoremap <silent> k gk
 nnoremap <silent> gj j
 nnoremap <silent> gk k
+nnoremap <silent> j gj
+nnoremap <silent> k gk
 nnoremap <silent> <Down> gj
 nnoremap <silent> <Up> gk
 inoremap <silent> <Down> <C-o>gj
