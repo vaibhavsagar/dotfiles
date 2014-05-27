@@ -110,7 +110,7 @@ set mouse=a
 set nobackup
 set noswapfile
 set whichwrap+=<,>,[,]
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi
 set wildignorecase
 set wildmenu
 " -v-
