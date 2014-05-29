@@ -55,8 +55,8 @@ augroup END
 " Display -^-
 au GUIEnter * set vb t_vb=
 if has("gui_running")
-    set background=light
     colorscheme solarized
+    set background=light
     set lines=67 columns=100
     winpos 0 0
 else
