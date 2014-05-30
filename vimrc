@@ -46,6 +46,7 @@ filetype plugin indent on
 " -v-
 
 " AutoCmds -^-
+au GUIEnter * set vb t_vb=
 augroup vimrcso
     au!
     autocmd BufWritePost $MYVIMRC so $MYVIMRC
@@ -53,7 +54,6 @@ augroup END
 " -v-
 
 " Display -^-
-au GUIEnter * set vb t_vb=
 if has("gui_running")
     colorscheme solarized
     set background=light
