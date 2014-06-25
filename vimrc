@@ -113,6 +113,7 @@ set whichwrap+=<,>,[,]
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi
 set wildignorecase
 set wildmenu
+set wildmode=list:longest,full
 " -v-
 
 " Search -^-
