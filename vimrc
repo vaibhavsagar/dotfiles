@@ -164,12 +164,12 @@ let g:ctrlp_custom_ignore={
     \ 'dir':  '\v[\/]\.(git|hg|svn)$',
     \ 'file': '\v\.(exe|so|dll)$',
     \ }
-let g:ctrlp_cache_dir = escape($HOME . '\.vim\.cache\ctrlp', '\')
+let g:ctrlp_cache_dir=escape($HOME . '\.vim\.cache\ctrlp', '\')
 " -v-
 
 " DelimitMate -^-
 let delimitMate_expand_cr=1
-let delimitMate_nesting_quotes = ['"', '''']
+let delimitMate_nesting_quotes=['"', '''']
 " -v-
 
 " Fugitive -^-
