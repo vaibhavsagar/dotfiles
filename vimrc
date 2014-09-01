@@ -62,6 +62,11 @@ if has("gui_running")
 else
     set t_ut=
 endif
+if has("renderoptions")
+    set renderoptions=type:directx,
+    \gamma:2.0,contrast:0.5,geom:1,
+    \renmode:5,taamode:1,level:0.5
+endif
 set colorcolumn=80
 set guifont=Consolas:h10
 set go=cegrL
