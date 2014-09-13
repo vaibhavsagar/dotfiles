@@ -90,6 +90,9 @@ set foldmethod=marker
 " -v-
 
 " Formatting -^-
+if has("linebreak")
+    set breakindent
+endif
 set autoindent
 set expandtab
 set linebreak
