@@ -40,6 +40,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-vinegar'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'wting/rust.vim'
 " -v-
 call vundle#end()
 filetype plugin indent on
