@@ -2,7 +2,6 @@
 
 " Prologue -^-
 set nocompatible
-source $VIMRUNTIME/mswin.vim
 " -v-
 
 " Vundle -^-
@@ -10,44 +9,48 @@ filetype off " For Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin("$HOME/.vim/bundle")
 " Plugins -^-
-Plugin 'Raimondi/delimitMate'
-Plugin 'SirVer/ultisnips'
-Plugin 'Yggdroot/indentLine'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
-Plugin 'bling/vim-bufferline'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'ervandew/supertab'
-Plugin 'gmarik/vundle'
-Plugin 'godlygeek/tabular'
-Plugin 'honza/vim-snippets'
-Plugin 'junegunn/goyo.vim'
-Plugin 'justinmk/vim-gtfo'
-Plugin 'kana/vim-textobj-indent'
-Plugin 'kana/vim-textobj-user'
-Plugin 'mbbill/undotree'
-Plugin 'mhinz/vim-startify'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'scrooloose/syntastic'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'tomtom/shymenu_vim'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-vinegar'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'wting/rust.vim'
+if has("python3")
+    Plugin 'SirVer/ultisnips'             " Snippet manager
+endif
+Plugin 'Raimondi/delimitMate'             " Auto close brackets and quotes
+Plugin 'Yggdroot/indentLine'              " Visually highlight indents
+Plugin 'altercation/vim-colors-solarized' " Solarized colour scheme
+Plugin 'bling/vim-airline'                " Full featured status bar
+Plugin 'bling/vim-bufferline'             " Space efficient buffer display
+Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy searching
+Plugin 'davidhalter/jedi-vim'             " Python code completion
+Plugin 'ervandew/supertab'                " Tab completion
+Plugin 'gmarik/vundle'                    " Vim plugin manager
+Plugin 'godlygeek/tabular'                " Align text as desired
+Plugin 'honza/vim-snippets'               " Snippets for Ultisnips
+Plugin 'junegunn/goyo.vim'                " Distraction-free mode
+Plugin 'justinmk/vim-gtfo'                " Open terminal or file manager
+Plugin 'kana/vim-textobj-indent'          " Indent text object
+Plugin 'kana/vim-textobj-user'            " Needed for indent text object
+Plugin 'mbbill/undotree'                  " Visually navigate undo history
+Plugin 'mhinz/vim-startify'               " Vim splash/start page
+Plugin 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
+Plugin 'scrooloose/syntastic'             " General syntax checking
+Plugin 'tmhedberg/SimpylFold'             " Intelligent Python code folding
+Plugin 'tomtom/shymenu_vim'               " Hide Vim menu
+Plugin 'tpope/vim-dispatch'               " Asynchronous program launching
+Plugin 'tpope/vim-fugitive'               " Git interface for Vim
+Plugin 'tpope/vim-markdown'               " Improved Markdown highlighting
+Plugin 'tpope/vim-repeat'                 " Repeat plugin changes
+Plugin 'tpope/vim-surround'               " Text objects for surroundings
+Plugin 'tpope/vim-unimpaired'             " Useful pairs of mappings
+Plugin 'tpope/vim-vinegar'                " Netrw wrapper
+Plugin 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
+Plugin 'wting/rust.vim'                   " Rust syntax highlighting
 " -v-
 call vundle#end()
 filetype plugin indent on
 " -v-
 
 " AutoCmds -^-
+" Remove bells
 au GUIEnter * set vb t_vb=
+" Source .vimrc on change
 augroup vimrcso
     au!
     autocmd BufWritePost $MYVIMRC so $MYVIMRC
@@ -56,6 +59,8 @@ augroup END
 
 " Display -^-
 if has("gui_running")
+    " I like my Windows mappings
+    source $VIMRUNTIME/mswin.vim
     colorscheme solarized
     set background=light
     set lines=67 columns=100
@@ -63,6 +68,7 @@ if has("gui_running")
 else
     set t_ut=
 endif
+"Windows specific text rendering
 if exists("&renderoptions")
     set renderoptions=type:directx,
     \gamma:2.0,contrast:0.5,geom:1,
@@ -119,7 +125,7 @@ set mouse=a
 set nobackup
 set noswapfile
 set whichwrap+=<,>,[,]
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi,*.class
 set wildignorecase
 set wildmenu
 set wildmode=list:longest,full
