@@ -198,7 +198,7 @@ nnoremap <silent> <Leader>gw :Gwrite<CR>
 " -v-
 
 " Gtfo -^-
-let g:gtfo#terminals = {'win': 'cmd.exe'}
+let g:gtfo#terminals = {'win': 'bash.exe'}
 " -v-
 
 " IndentLine -^-
