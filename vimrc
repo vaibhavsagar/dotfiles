@@ -27,6 +27,7 @@ Plugin 'junegunn/goyo.vim'                " Distraction-free mode
 Plugin 'justinmk/vim-gtfo'                " Open terminal or file manager
 Plugin 'kana/vim-textobj-indent'          " Indent text object
 Plugin 'kana/vim-textobj-user'            " Needed for indent text object
+Plugin 'majutsushi/tagbar'                " Easily browse current file tags
 Plugin 'mbbill/undotree'                  " Visually navigate undo history
 Plugin 'mhinz/vim-startify'               " Vim splash/start page
 Plugin 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
@@ -42,6 +43,9 @@ Plugin 'tpope/vim-unimpaired'             " Useful pairs of mappings
 Plugin 'tpope/vim-vinegar'                " Netrw wrapper
 Plugin 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
 Plugin 'wting/rust.vim'                   " Rust syntax highlighting
+Plugin 'xolox/vim-easytags'               " Automated tag generation
+Plugin 'xolox/vim-misc'                   " Helper functions for vim-easytags
+Plugin 'xolox/vim-shell'                  " Dependency for async vim-easytags
 " -v-
 call vundle#end()
 filetype plugin indent on
@@ -185,6 +189,10 @@ let g:ctrlp_cache_dir=escape($HOME . '\.vim\.cache\ctrlp', '\')
 " DelimitMate -^-
 let delimitMate_expand_cr=1
 let delimitMate_nesting_quotes=['"', '''']
+" -v-
+
+" Easytags -^-
+let g:easytags_async = 1
 " -v-
 
 " Fugitive -^-
