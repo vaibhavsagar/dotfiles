@@ -178,7 +178,7 @@ let g:bufferline_echo=0
 " -v-
 
 " CtrlP -^-
-let g:ctrlp_cmd='CtrlPMixed'
+let g:ctrlp_cmd='CtrlPBuffer'
 let g:ctrlp_custom_ignore={
     \ 'dir':  '\v[\/]\.(git|hg|svn)$',
     \ 'file': '\v\.(exe|so|dll)$',
