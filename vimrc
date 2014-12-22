@@ -89,6 +89,7 @@ set noshowmode
 set number
 set numberwidth=1
 set ruler
+set scrolloff=10
 set showcmd
 set synmaxcol=240
 syntax enable
