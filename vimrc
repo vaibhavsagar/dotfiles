@@ -52,8 +52,7 @@ filetype plugin indent on
 " -v-
 
 " AutoCmds -^-
-" Remove bells
-au GUIEnter * set vb t_vb=
+au GUIEnter * set t_vb=
 " Source .vimrc on change
 augroup vimrcso
     au!
@@ -84,7 +83,7 @@ set go=cegrL
 set laststatus=2
 set lazyredraw
 set linespace=0
-set noeb vb t_vb=
+set vb t_vb=
 set noshowmode
 set number
 set numberwidth=1
