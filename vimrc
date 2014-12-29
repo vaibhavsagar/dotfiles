@@ -101,7 +101,7 @@ set foldmethod=marker
 " -v-
 
 " Formatting -^-
-if has("linebreak")
+if exists("&breakindent")
     set breakindent
 endif
 set autoindent
@@ -129,8 +129,10 @@ set mouse=a
 set nobackup
 set noswapfile
 set whichwrap+=<,>,[,]
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi,*.class
-set wildignorecase
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi,*.class,*.pyc
+if exists("&wildignorecase")
+    set wildignorecase
+endif
 set wildmenu
 set wildmode=list:longest,full
 " -v-
