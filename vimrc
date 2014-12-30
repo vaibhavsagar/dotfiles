@@ -162,7 +162,7 @@ xnoremap <silent> > >gv
 " -v-
 
 " Leader -^-
-nnoremap <silent> <Leader>b :ls<CR>:b<Space>
+nnoremap <silent> <Leader>b :ls<CR>:b
 nnoremap <silent> <Leader>c :close<CR>
 nnoremap <silent> <Leader>d :bd<CR>
 " -v-
@@ -177,6 +177,7 @@ let g:airline_right_alt_sep=''
 
 " Bufferline -^-
 let g:bufferline_echo=0
+let g:bufferline_show_bufnr=0
 " -v-
 
 " CtrlP -^-
