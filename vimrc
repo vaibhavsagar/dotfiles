@@ -212,9 +212,6 @@ nnoremap <silent> <Leader>gs :Gstatus<CR>
 nnoremap <silent> <Leader>gw :Gwrite<CR>
 " -v-
 
-" Gtfo -^-
-" -v-
-
 " IndentLine -^-
 let g:indentLine_char='│'
 let g:indentLine_fileTypeExclude=['text', 'markdown', 'pandoc']
