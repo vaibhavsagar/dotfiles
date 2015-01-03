@@ -52,7 +52,11 @@ filetype plugin indent on
 " -v-
 
 " AutoCmds -^-
-au GUIEnter * set t_vb=
+" Remove bells
+augroup removebells
+    au!
+    autocmd GUIEnter * set t_vb=
+augroup END
 " Source .vimrc on change
 augroup vimrcso
     au!
