@@ -4,51 +4,49 @@
 set nocompatible
 " -v-
 
-" Vundle -^-
-filetype off " For Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin("$HOME/.vim/bundle")
+" Vim-plug -^-
+source ~/.vim/bundle/vim-plug/plug.vim
+call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
 if has("python3")
-    Plugin 'SirVer/ultisnips'             " Snippet manager
+    Plug 'SirVer/ultisnips'             " Snippet manager
 endif
-Plugin 'Raimondi/delimitMate'             " Auto close brackets and quotes
-Plugin 'Yggdroot/indentLine'              " Visually highlight indents
-Plugin 'altercation/vim-colors-solarized' " Solarized colour scheme
-Plugin 'bling/vim-airline'                " Full featured status bar
-Plugin 'bling/vim-bufferline'             " Space efficient buffer display
-Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy searching
-Plugin 'davidhalter/jedi-vim'             " Python code completion
-Plugin 'ervandew/supertab'                " Tab completion
-Plugin 'gmarik/vundle'                    " Vim plugin manager
-Plugin 'godlygeek/tabular'                " Align text as desired
-Plugin 'honza/vim-snippets'               " Snippets for Ultisnips
-Plugin 'junegunn/goyo.vim'                " Distraction-free mode
-Plugin 'justinmk/vim-gtfo'                " Open terminal or file manager
-Plugin 'kana/vim-textobj-indent'          " Indent text object
-Plugin 'kana/vim-textobj-user'            " Needed for indent text object
-Plugin 'majutsushi/tagbar'                " Easily browse current file tags
-Plugin 'mbbill/undotree'                  " Visually navigate undo history
-Plugin 'mhinz/vim-startify'               " Vim splash/start page
-Plugin 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
-Plugin 'scrooloose/syntastic'             " General syntax checking
-Plugin 'tmhedberg/SimpylFold'             " Intelligent Python code folding
-Plugin 'tomtom/shymenu_vim'               " Hide Vim menu
-Plugin 'tpope/vim-dispatch'               " Asynchronous program launching
-Plugin 'tpope/vim-fugitive'               " Git interface for Vim
-Plugin 'tpope/vim-markdown'               " Improved Markdown highlighting
-Plugin 'tpope/vim-repeat'                 " Repeat plugin changes
-Plugin 'tpope/vim-surround'               " Text objects for surroundings
-Plugin 'tpope/vim-unimpaired'             " Useful pairs of mappings
-Plugin 'tpope/vim-vinegar'                " Netrw wrapper
-Plugin 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
-Plugin 'wting/rust.vim'                   " Rust syntax highlighting
-Plugin 'xolox/vim-easytags'               " Automated tag generation
-Plugin 'xolox/vim-misc'                   " Helper functions for vim-easytags
-Plugin 'xolox/vim-shell'                  " Dependency for async vim-easytags
+Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes
+Plug 'Yggdroot/indentLine'              " Visually highlight indents
+Plug 'altercation/vim-colors-solarized' " Solarized colour scheme
+Plug 'bling/vim-airline'                " Full featured status bar
+Plug 'bling/vim-bufferline'             " Space efficient buffer display
+Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching
+Plug 'davidhalter/jedi-vim'             " Python code completion
+Plug 'ervandew/supertab'                " Tab completion
+Plug 'godlygeek/tabular'                " Align text as desired
+Plug 'honza/vim-snippets'               " Snippets for Ultisnips
+Plug 'junegunn/goyo.vim'                " Distraction-free mode
+Plug 'junegunn/vim-plug'                " Vim plugin manager
+Plug 'justinmk/vim-gtfo'                " Open terminal or file manager
+Plug 'kana/vim-textobj-indent'          " Indent text object
+Plug 'kana/vim-textobj-user'            " Needed for indent text object
+Plug 'majutsushi/tagbar'                " Easily browse current file tags
+Plug 'mbbill/undotree'                  " Visually navigate undo history
+Plug 'mhinz/vim-startify'               " Vim splash/start page
+Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
+Plug 'scrooloose/syntastic'             " General syntax checking
+Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding
+Plug 'tomtom/shymenu_vim'               " Hide Vim menu
+Plug 'tpope/vim-dispatch'               " Asynchronous program launching
+Plug 'tpope/vim-fugitive'               " Git interface for Vim
+Plug 'tpope/vim-markdown'               " Improved Markdown highlighting
+Plug 'tpope/vim-repeat'                 " Repeat plugin changes
+Plug 'tpope/vim-surround'               " Text objects for surroundings
+Plug 'tpope/vim-unimpaired'             " Useful pairs of mappings
+Plug 'tpope/vim-vinegar'                " Netrw wrapper
+Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
+Plug 'wting/rust.vim'                   " Rust syntax highlighting
+Plug 'xolox/vim-easytags'               " Automated tag generation
+Plug 'xolox/vim-misc'                   " Helper functions for vim-easytags
+Plug 'xolox/vim-shell'                  " Dependency for async vim-easytags
 " -v-
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 " -v-
 
 " AutoCmds -^-
@@ -255,5 +253,9 @@ let g:UltiSnipsUsePythonVersion=3
 " Undotree -^-
 let g:undotree_SetFocusWhenToggle=1
 nnoremap <silent> <F5> :UndotreeToggle<CR>
+" -v-
+
+" Vim-plug -^-
+let g:plug_threads=1
 " -v-
 " -v-
