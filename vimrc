@@ -53,7 +53,7 @@ call plug#end()
 " Remove bells
 augroup removebells
     au!
-    autocmd GUIEnter * set t_vb=
+    autocmd VimEnter,GUIEnter * set vb t_vb=
 augroup END
 " Source .vimrc on change
 augroup vimrcso
@@ -85,7 +85,6 @@ set go=cegrL
 set laststatus=2
 set lazyredraw
 set linespace=0
-set vb t_vb=
 set noshowmode
 set number
 set numberwidth=1
