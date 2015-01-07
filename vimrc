@@ -118,6 +118,7 @@ set wrapmargin=0
 " -v-
 
 " General -^-
+runtime macros/matchit.vim
 set autochdir
 set autoread
 set backspace=indent,eol,start
