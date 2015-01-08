@@ -1,0 +1,8 @@
+colorscheme solarized_light
+nnoremap <C-h> <C-p>
+nnoremap <C-l> <C-n>
+nnoremap J <C-d>
+nnoremap K <C-u>
+nnoremap y Y
+nnoremap Y y
+set toolbars=nonavigation
