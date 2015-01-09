@@ -1,9 +1,0 @@
-colorscheme solarized-light
-au LocationChange about:newtab :normal! o
-hi FontFixed -append font-size: 10pt !important;
-map -builtin <C-h> <C-p>
-map -builtin <C-l> <C-n>
-map -builtin J <C-d>
-map -builtin K <C-u>
-map -builtin y Y
-map -builtin Y y
