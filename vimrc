@@ -52,13 +52,13 @@ call plug#end()
 " AutoCmds -^-
 " Remove bells
 augroup removebells
-    au!
+    autocmd!
     autocmd VimEnter,GUIEnter * set vb t_vb=
 augroup END
 " Source .vimrc on change
 augroup vimrcso
-    au!
-    autocmd BufWritePost $MYVIMRC so $MYVIMRC
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END
 " -v-
 
@@ -81,7 +81,7 @@ if exists("&renderoptions")
 endif
 set colorcolumn=80
 set guifont=Consolas:h10
-set go=cegrL
+set guioptions=cegrL
 set laststatus=2
 set lazyredraw
 set linespace=0
