@@ -8,16 +8,12 @@ set nocompatible
 source ~/.vim/bundle/vim-plug/plug.vim
 call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
-if has("python3")
-    Plug 'SirVer/ultisnips'             " Snippet manager
-endif
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes
 Plug 'Yggdroot/indentLine'              " Visually highlight indents
 Plug 'altercation/vim-colors-solarized' " Solarized colour scheme
 Plug 'bling/vim-airline'                " Full featured status bar
 Plug 'bling/vim-bufferline'             " Space efficient buffer display
 Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching
-Plug 'davidhalter/jedi-vim'             " Python code completion
 Plug 'ervandew/supertab'                " Tab completion
 Plug 'godlygeek/tabular'                " Align text as desired
 Plug 'honza/vim-snippets'               " Snippets for Ultisnips
@@ -45,6 +41,10 @@ Plug 'wting/rust.vim'                   " Rust syntax highlighting
 Plug 'xolox/vim-easytags'               " Automated tag generation
 Plug 'xolox/vim-misc'                   " Helper functions for vim-easytags
 Plug 'xolox/vim-shell'                  " Dependency for async vim-easytags
+if has("python3") || has("python")
+    Plug 'SirVer/ultisnips'             " Snippet manager
+    Plug 'davidhalter/jedi-vim'         " Python code completion
+endif
 " -v-
 call plug#end()
 " -v-
