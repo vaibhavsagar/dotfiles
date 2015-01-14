@@ -22,7 +22,6 @@ Plug 'junegunn/vim-plug'                " Vim plugin manager
 Plug 'justinmk/vim-gtfo'                " Open terminal or file manager
 Plug 'kana/vim-textobj-indent'          " Indent text object
 Plug 'kana/vim-textobj-user'            " Needed for indent text object
-Plug 'majutsushi/tagbar'                " Easily browse current file tags
 Plug 'mbbill/undotree'                  " Visually navigate undo history
 Plug 'mhinz/vim-startify'               " Vim splash/start page
 Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
@@ -38,9 +37,12 @@ Plug 'tpope/vim-unimpaired'             " Useful pairs of mappings
 Plug 'tpope/vim-vinegar'                " Netrw wrapper
 Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
 Plug 'wting/rust.vim'                   " Rust syntax highlighting
-Plug 'xolox/vim-easytags'               " Automated tag generation
-Plug 'xolox/vim-misc'                   " Helper functions for vim-easytags
-Plug 'xolox/vim-shell'                  " Dependency for async vim-easytags
+if executable("ctags")
+    Plug 'majutsushi/tagbar'            " Easily browse current file tags
+    Plug 'xolox/vim-easytags'           " Automated tag generation
+    Plug 'xolox/vim-misc'               " Helper functions for vim-easytags
+    Plug 'xolox/vim-shell'              " Dependency for async vim-easytags
+endif
 if has("python3") || has("python")
     Plug 'SirVer/ultisnips'             " Snippet manager
     Plug 'davidhalter/jedi-vim'         " Python code completion
