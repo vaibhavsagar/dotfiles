@@ -120,6 +120,7 @@ set wrapmargin=0
 " -v-
 
 " General -^-
+let python_version=has("python3") ? 3 : 2
 runtime macros/matchit.vim
 set autochdir
 set autoread
@@ -219,7 +220,7 @@ nnoremap <silent> <F4> :IndentLinesToggle<CR>
 " -v-
 
 " Jedi -^-
-let g:jedi#force_py_version=3
+let g:jedi#force_py_version=python_version
 let g:jedi#auto_vim_configuration=0
 " -v-
 
@@ -249,7 +250,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsRemoveSelectModeMappings=0
-let g:UltiSnipsUsePythonVersion=3
+let g:UltiSnipsUsePythonVersion=python_version
 " -v-
 
 " Undotree -^-
