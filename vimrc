@@ -69,6 +69,8 @@ if has("gui_running")
     " I like my Windows mappings
     source $VIMRUNTIME/mswin.vim
     colorscheme solarized
+    set guifont=Consolas:h10
+    set guioptions=cegrL
     set background=light
     set lines=67 columns=100
     winpos 0 0
@@ -82,8 +84,6 @@ if exists("&renderoptions")
     \renmode:5,taamode:1,level:0.5
 endif
 set colorcolumn=80
-set guifont=Consolas:h10
-set guioptions=cegrL
 set laststatus=2
 set lazyredraw
 set linespace=0
