@@ -72,7 +72,7 @@ if has("gui_running")
     if has("win32") || has("win64")
         set guifont=Consolas:h10
     elseif has("mac")
-        set guifont=Menlo:h11
+        set guifont=Menlo:h12
     else
         set guifont=Ubuntu\ Mono:h11
     endif
@@ -82,6 +82,10 @@ if has("gui_running")
     winpos 0 0
 else
     set t_ut=
+    let g:solarized_termcolors=256
+    if has("mac")
+        colorscheme solarized
+    endif
 endif
 "Windows specific text rendering
 if exists("&renderoptions")
