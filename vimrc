@@ -16,7 +16,6 @@ Plug 'bling/vim-bufferline'             " Space efficient buffer display
 Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching
 Plug 'ervandew/supertab'                " Tab completion
 Plug 'godlygeek/tabular'                " Align text as desired
-Plug 'honza/vim-snippets'               " Snippets for Ultisnips
 Plug 'junegunn/goyo.vim'                " Distraction-free mode
 Plug 'junegunn/vim-plug'                " Vim plugin manager
 Plug 'justinmk/vim-gtfo'                " Open terminal or file manager
@@ -40,11 +39,12 @@ Plug 'wting/rust.vim'                   " Rust syntax highlighting
 if executable("ctags")
     Plug 'majutsushi/tagbar'            " Easily browse current file tags
     Plug 'xolox/vim-easytags'           " Automated tag generation
-    Plug 'xolox/vim-misc'               " Helper functions for vim-easytags
-    Plug 'xolox/vim-shell'              " Dependency for async vim-easytags
+    Plug 'xolox/vim-misc'               " Vim-easytags helper functions
+    Plug 'xolox/vim-shell'              " Async vim-easytags dependency
 endif
 if has("python3") || has("python")
     Plug 'SirVer/ultisnips'             " Snippet manager
+    Plug 'honza/vim-snippets'           " Snippets for Ultisnips
     Plug 'davidhalter/jedi-vim'         " Python code completion
 endif
 " -v-
