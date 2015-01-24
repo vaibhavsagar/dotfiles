@@ -1,4 +1,4 @@
-" vim:fdm=marker:foldlevel=0:foldmarker=-^-,-v-:
+" vim:fdm=marker:fdl=0:fmr=-^-,-v-:
 
 " Prologue -^-
 set nocompatible
