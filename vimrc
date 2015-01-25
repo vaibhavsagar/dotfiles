@@ -93,7 +93,9 @@ if exists("&renderoptions")
     \gamma:2.0,contrast:0.5,geom:1,
     \renmode:5,taamode:1,level:0.5
 endif
-set colorcolumn=80
+if exists("&colorcolumn")
+    set colorcolumn=80
+endif
 set laststatus=2
 set lazyredraw
 set linespace=0
