@@ -29,6 +29,7 @@ Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding
 Plug 'tomtom/shymenu_vim'               " Hide Vim menu
 Plug 'tpope/vim-dispatch'               " Asynchronous program launching
 Plug 'tpope/vim-fugitive'               " Git interface for Vim
+Plug 'tpope/vim-git'                    " Git runtime files
 Plug 'tpope/vim-markdown'               " Improved Markdown highlighting
 Plug 'tpope/vim-repeat'                 " Repeat plugin changes
 Plug 'tpope/vim-surround'               " Text objects for surroundings
