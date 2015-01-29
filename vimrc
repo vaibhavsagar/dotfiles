@@ -10,6 +10,7 @@ call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes
 Plug 'Yggdroot/indentLine'              " Visually highlight indents
+Plug 'airblade/vim-gitgutter'           " Show git diff in signs column
 Plug 'altercation/vim-colors-solarized' " Solarized colour scheme
 Plug 'bling/vim-airline'                " Full featured status bar
 Plug 'bling/vim-bufferline'             " Space efficient buffer display
