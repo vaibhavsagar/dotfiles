@@ -64,6 +64,11 @@ augroup vimrcso
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END
+" Display JSON files as JavaScript
+augroup jsondisplay
+    autocmd!
+    autocmd BufNewFile,BufRead *.json setlocal ft=javascript
+augroup END
 " -v-
 
 " Display -^-
