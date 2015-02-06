@@ -48,6 +48,7 @@ if has("python3") || has("python")
     Plug 'SirVer/ultisnips'             " Snippet manager
     Plug 'honza/vim-snippets'           " Snippets for Ultisnips
     Plug 'davidhalter/jedi-vim'         " Python code completion
+    Plug 'vim-pandoc/vim-pandoc'        " Pandoc integration for Vim
 endif
 " -v-
 call plug#end()
@@ -254,6 +255,10 @@ nnoremap <silent> <F4> :IndentLinesToggle<CR>
 let g:jedi#force_py_version=s:python_version
 let g:jedi#auto_vim_configuration=0
 " -v-
+
+"Pandoc -^-
+let g:pandoc#filetypes#pandoc_markdown=0
+"-v-
 
 " Startify -^-
 let g:startify_skiplist=[
