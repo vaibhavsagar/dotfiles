@@ -240,6 +240,8 @@ nnoremap <Leader>g<Space>    :Git<Space>
 nnoremap <silent> <Leader>gb :Gbrowse<CR>
 nnoremap <silent> <Leader>gc :Gcommit<CR>
 nnoremap <silent> <Leader>gd :Gdiff<CR>
+nnoremap <silent> <Leader>gf :Gfetch<CR>
+nnoremap <silent> <Leader>gp :Gpush<CR>
 nnoremap <silent> <Leader>gr :Gread<CR>
 nnoremap <silent> <Leader>gs :Gstatus<CR>
 nnoremap <silent> <Leader>gw :Gwrite<CR>
