@@ -18,6 +18,7 @@ Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching
 Plug 'ervandew/supertab'                " Tab completion
 Plug 'godlygeek/tabular'                " Align text as desired
 Plug 'junegunn/goyo.vim'                " Distraction-free mode
+Plug 'junegunn/vim-peekaboo'            " View register contents
 Plug 'junegunn/vim-plug'                " Vim plugin manager
 Plug 'justinmk/vim-gtfo'                " Open terminal or file manager
 Plug 'kana/vim-textobj-indent'          " Indent text object
