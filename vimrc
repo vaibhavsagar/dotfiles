@@ -56,11 +56,12 @@ call plug#end()
 " -v-
 
 " AutoCmds -^-
-" Remove bells
-augroup removebells
+augroup vimrc
     autocmd!
-    autocmd VimEnter,GUIEnter * set vb t_vb=
-augroup END
+augroup end
+
+" Remove bells
+autocmd vimrc VimEnter,GUIEnter * set vb t_vb=
 " Source .vimrc on change
 augroup vimrcso
     autocmd!
