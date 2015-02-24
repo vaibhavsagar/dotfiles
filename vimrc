@@ -63,10 +63,7 @@ augroup end
 " Remove bells
 autocmd vimrc VimEnter,GUIEnter * set vb t_vb=
 " Source .vimrc on change
-augroup vimrcso
-    autocmd!
-    autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END
+autocmd vimrc BufWritePost $MYVIMRC source $MYVIMRC
 " Display JSON files as JavaScript
 augroup jsondisplay
     autocmd!
