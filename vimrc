@@ -65,10 +65,7 @@ autocmd vimrc VimEnter,GUIEnter * set vb t_vb=
 " Source .vimrc on change
 autocmd vimrc BufWritePost $MYVIMRC source $MYVIMRC
 " Display JSON files as JavaScript
-augroup jsondisplay
-    autocmd!
-    autocmd BufNewFile,BufRead *.json setlocal ft=javascript
-augroup END
+autocmd vimrc BufNewFile,BufRead *.json setlocal ft=javascript
 " -v-
 
 " Display -^-
