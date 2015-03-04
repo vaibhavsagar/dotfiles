@@ -295,6 +295,8 @@ nnoremap <silent> <F5> :UndotreeToggle<CR>
 " -v-
 
 " Vim-plug -^-
-let g:plug_threads=(!has('ruby') || has('win32') || has('win64')) ? 1 : 16
+if (has('win32') || has('win64'))
+    let g:plug_threads=1
+endif
 " -v-
 " -v-
