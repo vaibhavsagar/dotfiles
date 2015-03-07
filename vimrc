@@ -177,7 +177,7 @@ set wrapscan
 " -v-
 
 " Remappings -^-
-let mapleader="\<Space>"
+let g:mapleader="\<Space>"
 " From https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
