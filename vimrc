@@ -137,8 +137,8 @@ set expandtab
 set linebreak
 set shiftround
 set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+let &softtabstop=&shiftwidth
+let &tabstop=&shiftwidth
 set textwidth=0
 set wrap
 set wrapmargin=0
