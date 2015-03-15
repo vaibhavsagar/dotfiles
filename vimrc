@@ -293,10 +293,4 @@ let g:UltiSnipsUsePythonVersion=s:python_version
 let g:undotree_SetFocusWhenToggle=1
 nnoremap <silent> <F5> :UndotreeToggle<CR>
 " -v-
-
-" Vim-plug -^-
-if (has('win32') || has('win64'))
-    let g:plug_threads=1
-endif
-" -v-
 " -v-
