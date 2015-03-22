@@ -41,16 +41,16 @@ Plug 'tpope/vim-vinegar'                " Netrw wrapper
 Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
 Plug 'wting/rust.vim'                   " Rust syntax highlighting
 if executable("ctags")
-    Plug 'majutsushi/tagbar'            " Easily browse current file tags
-    Plug 'xolox/vim-easytags'           " Automated tag generation
-    Plug 'xolox/vim-misc'               " Vim-easytags helper functions
-    Plug 'xolox/vim-shell'              " Async vim-easytags dependency
+  Plug 'majutsushi/tagbar'            " Easily browse current file tags
+  Plug 'xolox/vim-easytags'           " Automated tag generation
+  Plug 'xolox/vim-misc'               " Vim-easytags helper functions
+  Plug 'xolox/vim-shell'              " Async vim-easytags dependency
 endif
 if has("python3") || has("python")
-    Plug 'SirVer/ultisnips'             " Snippet manager
-    Plug 'honza/vim-snippets'           " Snippets for Ultisnips
-    Plug 'davidhalter/jedi-vim'         " Python code completion
-    Plug 'vim-pandoc/vim-pandoc'        " Pandoc integration for Vim
+  Plug 'SirVer/ultisnips'             " Snippet manager
+  Plug 'honza/vim-snippets'           " Snippets for Ultisnips
+  Plug 'davidhalter/jedi-vim'         " Python code completion
+  Plug 'vim-pandoc/vim-pandoc'        " Pandoc integration for Vim
 endif
 " -v-
 call plug#end()
@@ -58,7 +58,7 @@ call plug#end()
 
 " AutoCmds -^-
 augroup vimrc
-    autocmd!
+  autocmd!
 augroup end
 
 " Remove bells
@@ -73,42 +73,42 @@ autocmd vimrc Filetype markdown setlocal formatoptions+=a
 
 " Display -^-
 if has("gui_running")
-    " I like my Windows mappings
-    source $VIMRUNTIME/mswin.vim
-    colorscheme solarized
-    if has("win32") || has("win64")
-        set guifont=Consolas:h10
-    elseif has("mac")
-        set guifont=Menlo:h12
-    else
-        set guifont=Ubuntu\ Mono:h11
-    endif
-    set guioptions=cegrL
-    set background=light
-    set lines=67 columns=100
-    winpos 0 0
+  " I like my Windows mappings
+  source $VIMRUNTIME/mswin.vim
+  colorscheme solarized
+  if has("win32") || has("win64")
+    set guifont=Consolas:h10
+  elseif has("mac")
+    set guifont=Menlo:h12
+  else
+    set guifont=Ubuntu\ Mono:h11
+  endif
+  set guioptions=cegrL
+  set background=light
+  set lines=67 columns=100
+  winpos 0 0
 else
-    set t_ut=
-    let g:solarized_termcolors=256
-    if has("mac")
-        colorscheme solarized
-        if exists('$TMUX')
-            let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-            let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-        else
-            let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-            let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-        endif
+  set t_ut=
+  let g:solarized_termcolors=256
+  if has("mac")
+    colorscheme solarized
+    if exists('$TMUX')
+      let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+      let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+    else
+      let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+      let &t_EI = "\<Esc>]50;CursorShape=0\x7"
     endif
+  endif
 endif
 "Windows specific text rendering
 if exists("&renderoptions")
-    set renderoptions=type:directx,
-    \gamma:2.0,contrast:0.5,geom:1,
-    \renmode:5,taamode:1,level:0.5
+  set renderoptions=type:directx,
+  \gamma:2.0,contrast:0.5,geom:1,
+  \renmode:5,taamode:1,level:0.5
 endif
 if exists("&colorcolumn")
-    set colorcolumn=80
+  set colorcolumn=80
 endif
 set laststatus=2
 set lazyredraw
@@ -131,7 +131,7 @@ set foldmethod=marker
 
 " Formatting -^-
 if exists("&breakindent")
-    set breakindent
+  set breakindent
 endif
 set autoindent
 set linebreak
@@ -158,7 +158,7 @@ set noswapfile
 set whichwrap+=<,>,[,]
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi,*.class,*.pyc
 if exists("&wildignorecase")
-    set wildignorecase
+  set wildignorecase
 endif
 set wildmenu
 set wildmode=list:longest,full
@@ -214,9 +214,9 @@ let g:bufferline_show_bufnr=0
 " CtrlP -^-
 let g:ctrlp_cmd='CtrlPBuffer'
 let g:ctrlp_custom_ignore={
-    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-    \ 'file': '\v\.(exe|so|dll)$',
-    \ }
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
 let g:ctrlp_cache_dir=escape($HOME . '\.vim\.cache\ctrlp', '\')
 " -v-
 
@@ -259,10 +259,10 @@ let g:pandoc#filetypes#pandoc_markdown=0
 
 " Startify -^-
 let g:startify_skiplist=[
-    \ escape($VIMRUNTIME .'\doc', '\'),
-    \ escape('AppData\Local\Temp', '\'),
-    \ escape('bundle\.*\doc', '\')
-    \ ]
+  \ escape($VIMRUNTIME .'\doc', '\'),
+  \ escape('AppData\Local\Temp', '\'),
+  \ escape('bundle\.*\doc', '\')
+  \ ]
 " -v-
 
 " Syntastic -^-
