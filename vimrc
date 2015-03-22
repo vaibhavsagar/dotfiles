@@ -134,12 +134,8 @@ if exists("&breakindent")
     set breakindent
 endif
 set autoindent
-set expandtab
 set linebreak
 set shiftround
-set shiftwidth=4
-let &softtabstop=&shiftwidth
-let &tabstop=&shiftwidth
 set textwidth=0
 set wrap
 set wrapmargin=0
