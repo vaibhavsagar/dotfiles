@@ -48,7 +48,6 @@ if executable("ctags")
 endif
 if has("python3") || has("python")
   Plug 'SirVer/ultisnips'             " Snippet manager
-  Plug 'honza/vim-snippets'           " Snippets for Ultisnips
   Plug 'davidhalter/jedi-vim'         " Python code completion
   Plug 'vim-pandoc/vim-pandoc'        " Pandoc integration for Vim
 endif
