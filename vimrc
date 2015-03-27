@@ -241,6 +241,10 @@ nnoremap <silent> <Leader>gs :Gstatus<CR>
 nnoremap <silent> <Leader>gw :Gwrite<CR>
 " -v-
 
+" Gitgutter -^-
+let g:gitgutter_map_keys = 0
+" -v-
+
 " IndentLine -^-
 let g:indentLine_char='│'
 let g:indentLine_fileTypeExclude=['text', 'markdown', 'pandoc']
