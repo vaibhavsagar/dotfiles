@@ -242,7 +242,7 @@ nnoremap <silent> <Leader>gw :Gwrite<CR>
 " -v-
 
 " Gitgutter -^-
-let g:gitgutter_map_keys = 0
+let g:gitgutter_map_keys=0
 " -v-
 
 " IndentLine -^-
