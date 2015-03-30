@@ -47,7 +47,7 @@ if executable("ctags")
   Plug 'xolox/vim-shell'              " Async vim-easytags dependency
 endif
 if has("python3") || has("python")
-  Plug 'SirVer/ultisnips'             " Snippet manager
+  " Plug 'SirVer/ultisnips'             " Snippet manager
   Plug 'davidhalter/jedi-vim'         " Python code completion
   Plug 'vim-pandoc/vim-pandoc'        " Pandoc integration for Vim
 endif
