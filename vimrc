@@ -49,8 +49,8 @@ endif
 " Prefer Python 3 to Python 2.
 if has("python3") || has("python")
   " Plug 'SirVer/ultisnips'             " Snippet manager
-  Plug 'davidhalter/jedi-vim'         " Python code completion
-  Plug 'vim-pandoc/vim-pandoc'        " Pandoc integration for Vim
+  Plug 'davidhalter/jedi-vim'           " Python code completion
+  Plug 'vim-pandoc/vim-pandoc'          " Pandoc integration for Vim
 endif
 " -v-
 call plug#end()
