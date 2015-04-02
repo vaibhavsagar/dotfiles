@@ -41,10 +41,10 @@ Plug 'tpope/vim-vinegar'                " Netrw wrapper
 Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
 Plug 'wting/rust.vim'                   " Rust syntax highlighting
 if executable("ctags")
-  Plug 'majutsushi/tagbar'            " Easily browse current file tags
-  Plug 'xolox/vim-easytags'           " Automated tag generation
-  Plug 'xolox/vim-misc'               " Vim-easytags helper functions
-  Plug 'xolox/vim-shell'              " Async vim-easytags dependency
+  Plug 'majutsushi/tagbar'              " Easily browse current file tags
+  Plug 'xolox/vim-easytags'             " Automated tag generation
+  Plug 'xolox/vim-misc'                 " Vim-easytags helper functions
+  Plug 'xolox/vim-shell'                " Async vim-easytags dependency
 endif
 " Prefer Python 3 to Python 2.
 if has("python3") || has("python")
