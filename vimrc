@@ -130,6 +130,7 @@ set foldmethod=marker
 " -v-
 
 " Formatting -^-
+" Indentation specific settings are handled by vim-sleuth.
 if exists("&breakindent")
   set breakindent
 endif
