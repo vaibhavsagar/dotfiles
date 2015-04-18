@@ -187,8 +187,6 @@ nnoremap <silent> j gj
 nnoremap <silent> k gk
 nnoremap <silent> <Down> gj
 nnoremap <silent> <Up> gk
-inoremap <silent> <Down> <C-o>gj
-inoremap <silent> <Up> <C-o>gk
 xnoremap <silent> < <gv
 xnoremap <silent> > >gv
 " -v-
