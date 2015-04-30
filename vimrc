@@ -69,8 +69,6 @@ autocmd vimrc VimEnter,GUIEnter * set vb t_vb=
 autocmd vimrc BufWritePost $MYVIMRC source $MYVIMRC
 " Display JSON files as JavaScript
 autocmd vimrc BufNewFile,BufRead *.json setlocal ft=javascript
-" Automatically format Markdown
-autocmd vimrc Filetype markdown setlocal formatoptions+=a
 " -v-
 
 " Display -^-
