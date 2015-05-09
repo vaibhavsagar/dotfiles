@@ -222,7 +222,7 @@ let g:ctrlp_cache_dir=escape($HOME . '\.vim\.cache\ctrlp', '\')
 " DelimitMate -^-
 let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
-let g:delimitMate_nesting_quotes=['"', '''']
+let g:delimitMate_nesting_quotes=['"', '''', '`']
 " -v-
 
 " Easytags -^-
