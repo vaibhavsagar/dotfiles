@@ -238,6 +238,10 @@ nnoremap <silent> <Leader>gw :Gwrite<CR>
 let g:gitgutter_map_keys=0
 " -v-
 
+" Gtfo -^-
+let g:gtfo#terminals={'mac': 'iterm'}
+" -v-
+
 " IndentLine -^-
 let g:indentLine_char='│'
 let g:indentLine_fileTypeExclude=['text', 'markdown', 'pandoc']
