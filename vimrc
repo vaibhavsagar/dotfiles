@@ -5,7 +5,6 @@ set nocompatible
 " -v-
 
 " Vim-plug -^-
-source ~/.vim/bundle/vim-plug/plug.vim
 call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes
