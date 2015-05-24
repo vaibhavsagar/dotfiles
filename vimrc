@@ -276,14 +276,6 @@ nnoremap <Leader>t :Tab<Space>/
 vnoremap <Leader>t :Tab<Space>/
 " -v-
 
-" Ultisnips -^-
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsRemoveSelectModeMappings=0
-let g:UltiSnipsUsePythonVersion=s:python_version
-" -v-
-
 " Undotree -^-
 let g:undotree_SetFocusWhenToggle=1
 nnoremap <silent> <F5> :UndotreeToggle<CR>
