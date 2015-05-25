@@ -28,6 +28,7 @@ Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
 Plug 'scrooloose/syntastic'             " General syntax checking
 Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding
 Plug 'tomtom/shymenu_vim'               " Hide Vim menu
+Plug 'tpope/vim-commentary'             " Operators for commenting.
 Plug 'tpope/vim-dispatch'               " Asynchronous program launching
 Plug 'tpope/vim-fugitive'               " Git interface for Vim
 Plug 'tpope/vim-git'                    " Git runtime files
