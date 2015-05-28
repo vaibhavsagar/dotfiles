@@ -20,8 +20,7 @@ Plug 'godlygeek/tabular'                " Align text as desired
 Plug 'junegunn/goyo.vim'                " Distraction-free mode
 Plug 'junegunn/vim-peekaboo'            " View register contents
 Plug 'justinmk/vim-gtfo'                " Open terminal or file manager
-Plug 'kana/vim-textobj-indent'          " Indent text object
-Plug 'kana/vim-textobj-user'            " Needed for indent text object
+Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-indent'
 Plug 'mbbill/undotree'                  " Visually navigate undo history
 Plug 'mhinz/vim-startify'               " Vim splash/start page
 Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
