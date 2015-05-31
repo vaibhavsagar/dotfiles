@@ -76,6 +76,7 @@ if has("gui_running")
   " I like my Windows mappings
   source $VIMRUNTIME/mswin.vim
   colorscheme solarized
+  " Font settings.
   if has("win32") || has("win64")
     set guifont=Consolas:h10
   elseif has("mac")
