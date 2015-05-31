@@ -76,6 +76,7 @@ if has("gui_running")
   " I like my Windows mappings
   source $VIMRUNTIME/mswin.vim
   colorscheme solarized
+  set background=light
   " Font settings.
   if has("win32") || has("win64")
     set guifont=Consolas:h10
@@ -85,7 +86,6 @@ if has("gui_running")
     set guifont=Ubuntu\ Mono:h11
   endif
   set guioptions=cegrL
-  set background=light
   set lines=67 columns=100
   winpos 0 0
 else
