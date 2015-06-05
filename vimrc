@@ -175,6 +175,7 @@ let g:mapleader="\<Space>"
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
+" Navigate wrapped lines as expected.
 nnoremap <silent> gj j
 nnoremap <silent> gk k
 nnoremap <silent> j gj
