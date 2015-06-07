@@ -86,7 +86,8 @@ if has("gui_running")
     set guifont=Ubuntu\ Mono:h11
   endif
   set guioptions=cegrL
-  set lines=67 columns=100
+  set lines=67
+  set columns=100
   winpos 0 0
 else
   set t_ut=
