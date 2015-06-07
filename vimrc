@@ -182,6 +182,7 @@ nnoremap <silent> j gj
 nnoremap <silent> k gk
 nnoremap <silent> <Down> gj
 nnoremap <silent> <Up> gk
+" Retain selection after changing indent.
 xnoremap <silent> < <gv
 xnoremap <silent> > >gv
 " -v-
