@@ -243,7 +243,7 @@ let g:gitgutter_map_keys=0
 " -v-
 
 " Gtfo -^-
-let g:gtfo#terminals={'mac': 'iterm'}
+let g:gtfo#terminals={'mac': 'iterm', 'win': 'cmd'}
 " -v-
 
 " IndentLine -^-
