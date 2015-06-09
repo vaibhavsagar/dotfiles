@@ -7,48 +7,48 @@ set nocompatible
 " Vim-plug -^-
 call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
-Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes
-Plug 'Yggdroot/indentLine'              " Visually highlight indents
-Plug 'airblade/vim-gitgutter'           " Show git diff in signs column
-Plug 'altercation/vim-colors-solarized' " Solarized colour scheme
-Plug 'bling/vim-airline'                " Full featured status bar
-Plug 'bling/vim-bufferline'             " Space efficient buffer display
-Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching
-Plug 'derekwyatt/vim-scala'             " Scala syntax files
-Plug 'ervandew/supertab'                " Tab completion
-Plug 'godlygeek/tabular'                " Align text as desired
-Plug 'junegunn/goyo.vim'                " Distraction-free mode
-Plug 'junegunn/vim-peekaboo'            " View register contents
-Plug 'justinmk/vim-gtfo'                " Open terminal or file manager
+Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes.
+Plug 'Yggdroot/indentLine'              " Visually highlight indents.
+Plug 'airblade/vim-gitgutter'           " Show git diff in signs column.
+Plug 'altercation/vim-colors-solarized' " Solarized colour scheme.
+Plug 'bling/vim-airline'                " Full featured status bar.
+Plug 'bling/vim-bufferline'             " Space efficient buffer display.
+Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching.
+Plug 'derekwyatt/vim-scala'             " Scala syntax files.
+Plug 'ervandew/supertab'                " Tab completion.
+Plug 'godlygeek/tabular'                " Align text as desired.
+Plug 'junegunn/goyo.vim'                " Distraction-free mode.
+Plug 'junegunn/vim-peekaboo'            " View register contents.
+Plug 'justinmk/vim-gtfo'                " Open terminal or file manager.
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-indent'
-Plug 'mbbill/undotree'                  " Visually navigate undo history
-Plug 'mhinz/vim-startify'               " Vim splash/start page
-Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
-Plug 'scrooloose/syntastic'             " General syntax checking
-Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding
-Plug 'tomtom/shymenu_vim'               " Hide Vim menu
+Plug 'mbbill/undotree'                  " Visually navigate undo history.
+Plug 'mhinz/vim-startify'               " Vim splash/start page.
+Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace.
+Plug 'scrooloose/syntastic'             " General syntax checking.
+Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding.
+Plug 'tomtom/shymenu_vim'               " Hide Vim menu.
 Plug 'tpope/vim-commentary'             " Operators for commenting.
-Plug 'tpope/vim-dispatch'               " Asynchronous program launching
-Plug 'tpope/vim-fugitive'               " Git interface for Vim
-Plug 'tpope/vim-git'                    " Git runtime files
-Plug 'tpope/vim-markdown'               " Improved Markdown highlighting
-Plug 'tpope/vim-repeat'                 " Repeat plugin changes
-Plug 'tpope/vim-sleuth'                 " Smart indentation settings
-Plug 'tpope/vim-surround'               " Text objects for surroundings
-Plug 'tpope/vim-unimpaired'             " Useful pairs of mappings
-Plug 'tpope/vim-vinegar'                " Netrw wrapper
-Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting
-Plug 'wting/rust.vim'                   " Rust syntax highlighting
+Plug 'tpope/vim-dispatch'               " Asynchronous program launching.
+Plug 'tpope/vim-fugitive'               " Git interface for Vim.
+Plug 'tpope/vim-git'                    " Git runtime files.
+Plug 'tpope/vim-markdown'               " Improved Markdown highlighting.
+Plug 'tpope/vim-repeat'                 " Repeat plugin changes.
+Plug 'tpope/vim-sleuth'                 " Smart indentation settings.
+Plug 'tpope/vim-surround'               " Text objects for surroundings.
+Plug 'tpope/vim-unimpaired'             " Useful pairs of mappings.
+Plug 'tpope/vim-vinegar'                " Netrw wrapper.
+Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting.
+Plug 'wting/rust.vim'                   " Rust syntax highlighting.
 if executable("ctags")
-  Plug 'majutsushi/tagbar'              " Easily browse current file tags
   Plug 'xolox/vim-easytags'             " Automated tag generation
   Plug 'xolox/vim-misc'                 " Vim-easytags helper functions
   Plug 'xolox/vim-shell'                " Async vim-easytags dependency
+  Plug 'majutsushi/tagbar'              " Easily browse current file tags.
 endif
 " Prefer Python 3 to Python 2.
 if has("python3") || has("python")
-  Plug 'davidhalter/jedi-vim'           " Python code completion
-  Plug 'vim-pandoc/vim-pandoc'          " Pandoc integration for Vim
+  Plug 'davidhalter/jedi-vim'           " Python code completion.
+  Plug 'vim-pandoc/vim-pandoc'          " Pandoc integration for Vim.
 endif
 Plug '~/.vim/bundle/eclim'              " Eclim
 " -v-
@@ -60,20 +60,20 @@ augroup vimrc
   autocmd!
 augroup end
 
-" Remove bells
+" Remove bells.
 autocmd vimrc VimEnter,GUIEnter * set vb t_vb=
-" Source .vimrc on change
+" Source .vimrc on change.
 autocmd vimrc BufWritePost $MYVIMRC source $MYVIMRC
-" Display JSON files as JavaScript
+" Display JSON files as JavaScript.
 autocmd vimrc BufNewFile,BufRead *.json setlocal ft=javascript
-" Ensure that SimpylFold works properly
+" Ensure that SimpylFold works properly.
 autocmd vimrc BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum) foldmethod=expr
 autocmd vimrc BufWinLeave *.py setlocal foldexpr< foldmethod<
 " -v-
 
 " Display -^-
 if has("gui_running")
-  " I like my Windows mappings
+  " I like my Windows mappings.
   source $VIMRUNTIME/mswin.vim
   colorscheme solarized
   set background=light
@@ -273,8 +273,8 @@ let g:startify_skiplist=[
 " Syntastic -^-
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_balloons=1
-let g:syntastic_enable_signs=1 " Put errors on left side
-let g:syntastic_auto_loc_list=2 " Only show errors when I ask
+let g:syntastic_enable_signs=1 " Put errors on left side.
+let g:syntastic_auto_loc_list=2 " Only show errors when I ask.
 let g:syntastic_python_checkers=['flake8']
 " -v-
 
