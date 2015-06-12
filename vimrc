@@ -257,6 +257,7 @@ let g:jedi#popup_on_dot=0
 " -v-
 
 "Pandoc -^-
+" Only syntax highlight pandoc files.
 let g:pandoc#filetypes#pandoc_markdown=0
 "-v-
 
