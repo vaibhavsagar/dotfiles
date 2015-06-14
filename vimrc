@@ -187,6 +187,7 @@ xnoremap <silent> > >gv
 " -v-
 
 " Leader -^-
+" Missing a good 'a' mapping :).
 nnoremap <silent> <Leader>b :ls<CR>:b
 nnoremap <silent> <Leader>c :close<CR>
 nnoremap <silent> <Leader>d :bd<CR>
