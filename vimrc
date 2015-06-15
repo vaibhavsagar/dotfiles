@@ -65,7 +65,8 @@ autocmd vimrc BufWritePost $MYVIMRC source $MYVIMRC
 " Display JSON files as JavaScript.
 autocmd vimrc BufNewFile,BufRead *.json setlocal ft=javascript
 " Ensure that SimpylFold works properly.
-autocmd vimrc BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum) foldmethod=expr
+autocmd vimrc BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum)
+                                      \ foldmethod=expr
 autocmd vimrc BufWinLeave *.py setlocal foldexpr< foldmethod<
 " -v-
 
