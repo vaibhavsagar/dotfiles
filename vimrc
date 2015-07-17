@@ -192,6 +192,7 @@ xnoremap <silent> > >gv
 nnoremap <silent> <Leader>b :ls<CR>:b
 nnoremap <silent> <Leader>c :close<CR>
 nnoremap <silent> <Leader>d :bd<CR>
+nnoremap <silent> <Leader>e :e $MYVIMRC<CR>
 " -v-
 
 " Configuration -^-
