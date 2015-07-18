@@ -148,6 +148,7 @@ set fileencoding=utf-8
 set hidden
 set history=1000
 set mouse=a
+" I don't need .swp files cluttering up my workspace.
 set nobackup
 set noswapfile
 set whichwrap+=<,>,[,]
