@@ -48,7 +48,6 @@ if has("python3") || has("python")
   Plug 'davidhalter/jedi-vim'           " Python code completion.
   Plug 'vim-pandoc/vim-pandoc'          " Pandoc integration for Vim.
 endif
-Plug '~/.vim/bundle/eclim'              " Locally installed Eclim.
 " -v-
 call plug#end()
 " -v-
