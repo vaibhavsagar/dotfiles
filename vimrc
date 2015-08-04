@@ -70,7 +70,7 @@ autocmd vimrc BufWinLeave *.py setlocal foldexpr< foldmethod<
 
 " Display -^-
 if has("gui_running")
-  " I like my Windows mappings.
+  " You can pry my Windows mappings from my cold, dead fingers.
   source $VIMRUNTIME/mswin.vim
   colorscheme solarized
   set background=light
