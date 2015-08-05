@@ -87,10 +87,10 @@ if has("gui_running")
   set columns=100
   winpos 0 0
 else
-  set t_ut=
-  let g:solarized_termcolors=256
   if has("mac")
     colorscheme solarized
+    set t_ut=
+    let g:solarized_termcolors=256
     if exists('$TMUX')
       let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
       let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
