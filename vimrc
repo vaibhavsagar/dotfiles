@@ -86,8 +86,6 @@ if has("gui_running")
   set lines=67
   set columns=100
   winpos 0 0
-else
-  if has("mac")
     colorscheme solarized
     set t_ut=
     let g:solarized_termcolors=256
@@ -97,7 +95,7 @@ else
     else
       let &t_SI = "\<Esc>]50;CursorShape=1\x7"
       let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-    endif
+elseif has("mac")
   endif
 endif
 if exists("&colorcolumn")
