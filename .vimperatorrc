@@ -1,4 +1,4 @@
-colorscheme solarized_light
+colorscheme solarized-light
 nnoremap <C-h> <C-p>
 nnoremap <C-l> <C-n>
 nnoremap J <C-d>
@@ -6,3 +6,4 @@ nnoremap K <C-u>
 nnoremap y Y
 nnoremap Y y
 set toolbars=nonavigation
+hi -append Normal font-size:12px
