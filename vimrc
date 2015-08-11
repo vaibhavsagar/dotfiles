@@ -134,6 +134,7 @@ set wrapmargin=0
 " -v-
 
 " General -^-
+" Try to use Python 3 as much as possible.
 let s:python_version=has("python3") ? 3 : 2
 runtime macros/matchit.vim
 set autochdir
