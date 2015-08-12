@@ -150,6 +150,7 @@ set mouse=a
 set nobackup
 set noswapfile
 set whichwrap+=<,>,[,]
+" Going wild.
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi,*.class,*.pyc
 if exists("&wildignorecase")
   set wildignorecase
