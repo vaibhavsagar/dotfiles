@@ -1,0 +1,7 @@
+[user]
+	email = vaibhavsagar@gmail.com
+	name = Vaibhav Sagar
+[color]
+	ui = auto
+[push]
+	default = simple
