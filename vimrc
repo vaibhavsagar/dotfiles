@@ -229,7 +229,6 @@ let g:easytags_async=1
 
 " Fugitive -^-
 nnoremap <Leader>g<Space>    :Git<Space>
-nnoremap <silent> <Leader>gb :Gbrowse<CR>
 nnoremap <silent> <Leader>gc :Gcommit<CR>
 nnoremap <silent> <Leader>gd :Gvdiff<CR>
 nnoremap <silent> <Leader>gf :Gfetch<CR>
