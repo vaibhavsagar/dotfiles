@@ -10,6 +10,7 @@ call plug#begin("$HOME/.vim/bundle")
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes.
 Plug 'Yggdroot/indentLine'              " Visually highlight indents.
 Plug 'airblade/vim-gitgutter'           " Show git diff in signs column.
+Plug 'airblade/vim-rooter'              " Change directory to project root.
 Plug 'altercation/vim-colors-solarized' " Solarized colour scheme.
 Plug 'bling/vim-airline'                " Full featured status bar.
 Plug 'bling/vim-bufferline'             " Space efficient buffer display.
@@ -137,7 +138,6 @@ set wrapmargin=0
 " Try to use Python 3 as much as possible.
 let s:python_version=has("python3") ? 3 : 2
 runtime macros/matchit.vim
-set autochdir
 set autoread
 set backspace=indent,eol,start
 set completeopt=menuone,longest,preview
