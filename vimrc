@@ -12,7 +12,6 @@ Plug 'Yggdroot/indentLine'              " Visually highlight indents.
 Plug 'airblade/vim-gitgutter'           " Show git diff in signs column.
 Plug 'airblade/vim-rooter'              " Change directory to project root.
 Plug 'altercation/vim-colors-solarized' " Solarized colour scheme.
-Plug 'bling/vim-airline'                " Full featured status bar.
 Plug 'bling/vim-bufferline'             " Space efficient buffer display.
 Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching.
 Plug 'ervandew/supertab'                " Tab completion.
@@ -37,6 +36,8 @@ Plug 'tpope/vim-sleuth'                 " Smart indentation settings.
 Plug 'tpope/vim-surround'               " Text objects for surroundings.
 Plug 'tpope/vim-unimpaired'             " Useful pairs of mappings.
 Plug 'tpope/vim-vinegar'                " Netrw wrapper.
+Plug 'vim-airline/vim-airline'          " Full featured status bar.
+Plug 'vim-airline/vim-airline-themes'   " Full featured status bar themes.
 Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting.
 Plug 'wting/rust.vim'                   " Rust syntax highlighting.
 if executable("ctags")
