@@ -13,6 +13,7 @@ Plug 'Yggdroot/indentLine'              " Visually highlight indents.
 Plug 'airblade/vim-gitgutter'           " Show git diff in signs column.
 Plug 'airblade/vim-rooter'              " Change directory to project root.
 Plug 'altercation/vim-colors-solarized' " Solarized colour scheme.
+Plug 'bitc/lushtags', {'do': 'stack install'}
 Plug 'bling/vim-bufferline'             " Space efficient buffer display.
 Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching.
 Plug 'ervandew/supertab'                " Tab completion.
