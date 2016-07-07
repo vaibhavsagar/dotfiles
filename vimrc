@@ -8,6 +8,7 @@ set nocompatible
 call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes.
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Yggdroot/indentLine'              " Visually highlight indents.
 Plug 'airblade/vim-gitgutter'           " Show git diff in signs column.
 Plug 'airblade/vim-rooter'              " Change directory to project root.
