@@ -16,6 +16,7 @@ Plug 'altercation/vim-colors-solarized' " Solarized colour scheme.
 Plug 'bitc/lushtags', {'do': 'stack install'}
 Plug 'bling/vim-bufferline'             " Space efficient buffer display.
 Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching.
+Plug 'eagletmt/ghcmod-vim'              " GHC-Mod support in Vim.
 Plug 'ervandew/supertab'                " Tab completion.
 Plug 'godlygeek/tabular'                " Align text as desired.
 Plug 'junegunn/goyo.vim'                " Distraction-free mode.
