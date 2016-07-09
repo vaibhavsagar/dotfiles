@@ -19,6 +19,7 @@ Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching.
 Plug 'eagletmt/ghcmod-vim'              " GHC-Mod support in Vim.
 Plug 'ervandew/supertab'                " Tab completion.
 Plug 'godlygeek/tabular'                " Align text as desired.
+Plug 'jszakmeister/vim-togglecursor'    " Toggle cursor in terminal.
 Plug 'junegunn/goyo.vim'                " Distraction-free mode.
 Plug 'junegunn/vim-peekaboo'            " View register contents.
 Plug 'justinmk/vim-gtfo'                " Open terminal or file manager.
@@ -95,14 +96,6 @@ elseif has("mac")
   colorscheme solarized
   set t_ut=
   let g:solarized_termcolors=256
-  if exists('$TMUX')
-    " Make tmux aware of current mode so it can change the cursor.
-    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-  else
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-  endif
 endif
 if exists("&colorcolumn")
   set colorcolumn=80
