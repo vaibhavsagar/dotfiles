@@ -154,6 +154,14 @@ if exists("&wildignorecase")
 endif
 set wildmenu
 set wildmode=list:longest,full
+function! PointFree() range
+  let line_no = a:firstline
+  let definition =join(getline(a:firstline, a:lastline), "\n")
+  echom definition
+  let output = systemlist('pointfree "'.definition.'"')[0]
+  normal! gvc
+  call setline(line_no, output)
+endfunction
 " -v-
 
 " Search -^-
