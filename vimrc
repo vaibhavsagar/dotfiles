@@ -175,11 +175,6 @@ set wrapscan
 
 " Remappings -^-
 let g:mapleader="\<Space>"
-" From https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-endif
 " Navigate wrapped lines as expected.
 nnoremap <silent> gj j
 nnoremap <silent> gk k
