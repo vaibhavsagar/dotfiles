@@ -123,7 +123,6 @@ set foldmethod=marker
 if exists("&breakindent")
   set breakindent
 endif
-set autoindent
 set linebreak
 set shiftround
 set textwidth=0
