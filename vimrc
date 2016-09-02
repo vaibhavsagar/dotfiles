@@ -86,7 +86,7 @@ if has("gui_running")
   elseif has("mac")
     set guifont=Menlo:h12
   else
-    set guifont=Monospace\ Regular\ 10
+    set guifont=Ubuntu\ Mono\ 12
   endif
   set guioptions=cegrL
   set lines=67
