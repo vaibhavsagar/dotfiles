@@ -36,6 +36,7 @@ Plug 'tpope/vim-fugitive'               " Git interface for Vim.
 Plug 'tpope/vim-git'                    " Git runtime files.
 Plug 'tpope/vim-markdown'               " Improved Markdown highlighting.
 Plug 'tpope/vim-repeat'                 " Repeat plugin changes.
+Plug 'tpope/vim-sensible'               " Sensible defaults.
 Plug 'tpope/vim-sleuth'                 " Smart indentation settings.
 Plug 'tpope/vim-surround'               " Text objects for surroundings.
 Plug 'tpope/vim-unimpaired'             " Useful pairs of mappings.
