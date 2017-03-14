@@ -93,7 +93,7 @@ if has("gui_running")
   set lines=67
   set columns=100
   winpos 0 0
-elseif has("mac")
+elseif has("mac") || has("unix")
   colorscheme solarized
   set t_ut=
   let g:solarized_termcolors=256
