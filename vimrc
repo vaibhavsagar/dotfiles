@@ -26,8 +26,8 @@ Plug 'justinmk/vim-gtfo'                " Open terminal or file manager.
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-indent'
 Plug 'mbbill/undotree'                  " Visually navigate undo history.
 Plug 'mhinz/vim-startify'               " Vim splash/start page.
+Plug 'neomake/neomake'
 Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace.
-Plug 'scrooloose/syntastic'             " General syntax checking.
 Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding.
 Plug 'tomtom/shymenu_vim'               " Hide Vim menu.
 Plug 'tpope/vim-commentary'             " Operators for commenting.
@@ -73,6 +73,8 @@ autocmd vimrc BufNewFile,BufRead *.json setlocal ft=javascript
 autocmd vimrc BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum)
                                       \ foldmethod=expr
 autocmd vimrc BufWinLeave *.py setlocal foldexpr< foldmethod<
+
+autocmd vimrc BufWrite * Neomake
 " -v-
 
 " Display -^-
@@ -256,6 +258,10 @@ nnoremap <silent> <F4> :IndentLinesToggle<CR>
 let g:jedi#force_py_version=s:python_version
 let g:jedi#auto_vim_configuration=0
 let g:jedi#popup_on_dot=0
+" -v-
+
+" Neomake -^-
+let g:neomake_haskell_enabled_makers = ['hdevtools', 'hlint']
 " -v-
 
 "Pandoc -^-
