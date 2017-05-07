@@ -104,16 +104,13 @@ endif
 if exists("&colorcolumn")
   set colorcolumn=80
 endif
-set laststatus=2
 set lazyredraw
 set linespace=0
 set noshowmode
 set number
 set numberwidth=1
-set ruler
 set showcmd
 set synmaxcol=240
-syntax enable
 " -v-
 
 " Folding -^-
@@ -137,14 +134,10 @@ set wrapmargin=0
 " General -^-
 " Try to use Python 3 as much as possible.
 let s:python_version=has("python3") ? 3 : 2
-runtime macros/matchit.vim
-set autoread
-set backspace=indent,eol,start
 set completeopt=menuone,longest,preview
 set encoding=utf-8
 set fileencoding=utf-8
 set hidden
-set history=1000
 set mouse=a
 " I don't need .swp files or backups cluttering up my workspace.
 set nobackup
@@ -155,7 +148,6 @@ set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.o,*.hi,*.class,*.pyc
 if exists("&wildignorecase")
   set wildignorecase
 endif
-set wildmenu
 set wildmode=list:longest,full
 function! PointFree() range
   let line_no = a:firstline
@@ -171,7 +163,6 @@ endfunction
 set gdefault
 set hlsearch
 set ignorecase
-set incsearch
 set smartcase
 set wrapscan
 " -v-
