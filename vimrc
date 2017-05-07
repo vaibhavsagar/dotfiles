@@ -7,6 +7,7 @@ set nocompatible
 " Vim-plug -^-
 call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
+Plug 'LnL7/vim-nix'
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes.
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Yggdroot/indentLine'              " Visually highlight indents.
