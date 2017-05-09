@@ -117,3 +117,16 @@ if ! shopt -oq posix; then
 fi
 
 export PROMPT_COMMAND='if [ "$(id -u)" -ne 0  ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
+cats() {
+  if [[ "$#" != 1 ]]; then
+    echo "usage: cats PATH" >&2
+    exit 1
+  fi
+  if [[ -d "$1" ]]; then
+    ls "$1";
+  elif [[ -f "$1" || -h "$1" ]]; then
+    cat "$1";
+  elif [[ -v "$1" ]]; then
+    eval "echo \"\$$1\""
+  fi
+}
