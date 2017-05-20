@@ -28,6 +28,7 @@ Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-indent'
 Plug 'mbbill/undotree'                  " Visually navigate undo history.
 Plug 'mhinz/vim-startify'               " Vim splash/start page.
 Plug 'neomake/neomake'
+Plug 'neovimhaskell/haskell-vim'
 Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace.
 Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding.
 Plug 'tomtom/shymenu_vim'               " Hide Vim menu.
@@ -238,6 +239,10 @@ let g:gitgutter_map_keys=0
 
 " Gtfo -^-
 let g:gtfo#terminals={'mac': 'iterm', 'win': 'cmd'}
+" -v-
+
+" Haskell-vim -^-
+let g:haskell_indent_disable = 1
 " -v-
 
 " IndentLine -^-
