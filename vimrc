@@ -20,6 +20,7 @@ Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching.
 " Plug 'eagletmt/ghcmod-vim'              " GHC-Mod support in Vim.
 Plug 'ervandew/supertab'                " Tab completion.
 Plug 'godlygeek/tabular'                " Align text as desired.
+Plug 'idris-hackers/idris-vim'          " Idris mode for Vim.
 Plug 'jszakmeister/vim-togglecursor'    " Toggle cursor in terminal.
 Plug 'junegunn/goyo.vim'                " Distraction-free mode.
 Plug 'junegunn/vim-peekaboo'            " View register contents.
@@ -30,6 +31,7 @@ Plug 'mhinz/vim-startify'               " Vim splash/start page.
 Plug 'neomake/neomake'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace.
+Plug 'raichoo/purescript-vim'
 Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding.
 Plug 'tomtom/shymenu_vim'               " Hide Vim menu.
 Plug 'tpope/vim-commentary'             " Operators for commenting.
