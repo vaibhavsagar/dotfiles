@@ -107,6 +107,7 @@ endif
 if exists("&colorcolumn")
   set colorcolumn=80
 endif
+set cursorline
 set lazyredraw
 set linespace=0
 set noshowmode
