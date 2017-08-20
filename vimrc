@@ -29,10 +29,10 @@ Plug 'justinmk/vim-gtfo'                " Open terminal or file manager.
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-indent'
 Plug 'mbbill/undotree'                  " Visually navigate undo history.
 Plug 'mhinz/vim-startify'               " Vim splash/start page.
-Plug 'neomake/neomake'
-Plug 'neovimhaskell/haskell-vim'
+Plug 'neomake/neomake'                  " Asynchronous linting and make.
+Plug 'neovimhaskell/haskell-vim'        " Better Haskell syntax highlighting.
 Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace.
-Plug 'raichoo/purescript-vim'
+Plug 'raichoo/purescript-vim'           " PureScript syntax highlighting
 Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding.
 Plug 'tomtom/shymenu_vim'               " Hide Vim menu.
 Plug 'tpope/vim-commentary'             " Operators for commenting.
