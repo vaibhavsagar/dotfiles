@@ -7,6 +7,8 @@ set nocompatible
 " Vim-plug -^-
 call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
+Plug 'tpope/vim-sensible'               " Sensible defaults.
+
 Plug 'LnL7/vim-nix'
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes.
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
@@ -42,7 +44,6 @@ Plug 'tpope/vim-fugitive'               " Git interface for Vim.
 Plug 'tpope/vim-git'                    " Git runtime files.
 Plug 'tpope/vim-markdown'               " Improved Markdown highlighting.
 Plug 'tpope/vim-repeat'                 " Repeat plugin changes.
-Plug 'tpope/vim-sensible'               " Sensible defaults.
 Plug 'tpope/vim-sleuth'                 " Smart indentation settings.
 Plug 'tpope/vim-surround'               " Text objects for surroundings.
 Plug 'tpope/vim-unimpaired'             " Useful pairs of mappings.
