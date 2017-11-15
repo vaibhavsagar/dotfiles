@@ -29,6 +29,7 @@ Plug 'junegunn/goyo.vim'                " Distraction-free mode.
 Plug 'junegunn/vim-peekaboo'            " View register contents.
 Plug 'justinmk/vim-gtfo'                " Open terminal or file manager.
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-indent'
+Plug 'machakann/vim-highlightedyank'    " Higlight yanked region.
 Plug 'mbbill/undotree'                  " Visually navigate undo history.
 Plug 'mhinz/vim-startify'               " Vim splash/start page.
 Plug 'neomake/neomake'                  " Asynchronous linting and make.
@@ -245,6 +246,10 @@ let g:gitgutter_map_keys=0
 
 " Gtfo -^-
 let g:gtfo#terminals={'mac': 'iterm', 'win': 'cmd'}
+" -v-
+
+" HighlightedYank -^-
+map y <Plug>(highlightedyank)
 " -v-
 
 " Haskell-vim -^-
