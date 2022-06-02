@@ -302,4 +302,10 @@ vnoremap <Leader>t :Tab<Space>/
 let g:undotree_SetFocusWhenToggle=1
 nnoremap <silent> <F5> :UndotreeToggle<CR>
 " -v-
+
+" vim-togglecursor -^-
+if $TERM == 'xterm-256color'
+  let g:togglecursor_force = 'xterm'
+endif
+" -v-
 " -v-
