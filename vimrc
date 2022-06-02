@@ -59,7 +59,7 @@ if executable("ctags")
 endif
 " Prefer Python 3 to Python 2.
 if has("python3") || has("python")
-  Plug 'davidhalter/jedi-vim'           " Python code completion.
+  " Plug 'davidhalter/jedi-vim'           " Python code completion.
   Plug 'vim-pandoc/vim-pandoc'          " Pandoc integration for Vim.
 endif
 " -v-
