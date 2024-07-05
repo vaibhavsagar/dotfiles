@@ -11,13 +11,17 @@ Plug 'tpope/vim-sensible'               " Sensible defaults.
 
 Plug 'LnL7/vim-nix'
 Plug 'Raimondi/delimitMate'             " Auto close brackets and quotes.
-Plug 'Shougo/vimproc.vim', {'do': 'make'}
+" Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Yggdroot/hiPairs'                 " Visually highlight surrounding pair.
 Plug 'Yggdroot/indentLine'              " Visually highlight indents.
 Plug 'airblade/vim-gitgutter'           " Show git diff in signs column.
 Plug 'airblade/vim-rooter'              " Change directory to project root.
 Plug 'altercation/vim-colors-solarized' " Solarized colour scheme.
-Plug 'mkasa/lushtags', {'do': 'stack install'}
+" Plug 'autozimu/LanguageClient-neovim', {
+"     \ 'branch': 'next',
+"     \ 'do': 'bash install.sh',
+"     \ }
+" Plug 'mkasa/lushtags', {'do': 'stack install'}
 Plug 'bling/vim-bufferline'             " Space efficient buffer display.
 Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy searching.
 " Plug 'eagletmt/ghcmod-vim'              " GHC-Mod support in Vim.
@@ -33,17 +37,17 @@ Plug 'machakann/vim-highlightedyank'    " Higlight yanked region.
 Plug 'mbbill/undotree'                  " Visually navigate undo history.
 Plug 'mhinz/vim-startify'               " Vim splash/start page.
 Plug 'neomake/neomake'                  " Asynchronous linting and make.
-Plug 'neovimhaskell/haskell-vim'        " Better Haskell syntax highlighting.
+" Plug 'neovimhaskell/haskell-vim'        " Better Haskell syntax highlighting.
 Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace.
-Plug 'raichoo/purescript-vim'           " PureScript syntax highlighting
+" Plug 'raichoo/purescript-vim'           " PureScript syntax highlighting
 Plug 'tmhedberg/SimpylFold'             " Intelligent Python code folding.
-Plug 'tomtom/shymenu_vim'               " Hide Vim menu.
+" Plug 'tomtom/shymenu_vim'               " Hide Vim menu.
 Plug 'tpope/vim-commentary'             " Operators for commenting.
 Plug 'tpope/vim-dispatch'               " Asynchronous program launching.
 Plug 'tpope/vim-eunuch'                 " Helpers for UNIX
 Plug 'tpope/vim-fugitive'               " Git interface for Vim.
 Plug 'tpope/vim-git'                    " Git runtime files.
-Plug 'tpope/vim-markdown'               " Improved Markdown highlighting.
+" Plug 'tpope/vim-markdown'               " Improved Markdown highlighting.
 Plug 'tpope/vim-repeat'                 " Repeat plugin changes.
 Plug 'tpope/vim-sleuth'                 " Smart indentation settings.
 Plug 'tpope/vim-surround'               " Text objects for surroundings.
@@ -53,14 +57,15 @@ Plug 'vim-airline/vim-airline'          " Full featured status bar.
 Plug 'vim-airline/vim-airline-themes'   " Full featured status bar themes.
 Plug 'vim-pandoc/vim-pandoc-syntax'     " Pandoc syntax highlighting.
 Plug 'wting/rust.vim'                   " Rust syntax highlighting.
-if executable("ctags")
-  Plug 'majutsushi/tagbar'              " Easily browse current file tags.
-  Plug 'xolox/vim-misc' | Plug 'xolox/vim-shell' | Plug 'xolox/vim-easytags'
-endif
 " Prefer Python 3 to Python 2.
 if has("python3") || has("python")
   " Plug 'davidhalter/jedi-vim'           " Python code completion.
   Plug 'vim-pandoc/vim-pandoc'          " Pandoc integration for Vim.
+endif
+if has("nvim")
+  Plug 'williamboman/mason.nvim'           " Neovim package manager
+  Plug 'williamboman/mason-lspconfig.nvim' " Neovim package manager integration with lspconfig
+  Plug 'neovim/nvim-lspconfig'
 endif
 " -v-
 call plug#end()
@@ -82,7 +87,7 @@ autocmd vimrc BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum)
                                       \ foldmethod=expr
 autocmd vimrc BufWinLeave *.py setlocal foldexpr< foldmethod<
 
-autocmd vimrc BufWrite * Neomake
+" autocmd vimrc BufWrite * Neomake
 " -v-
 
 " Display -^-
@@ -97,16 +102,25 @@ if has("gui_running")
   elseif has("mac")
     set guifont=Menlo:h12
   else
-    set guifont=Hack\ 11
+    if has('nvim')
+      set guifont=Hack:h13
+    else
+      set guifont=Hack\ 13
+    endif
   endif
   set guioptions=cegrL
-  set lines=67
-  set columns=100
-  winpos 0 0
+  set lines=76
+  set columns=120
+  if !has('nvim')
+    winpos 0 0
+  endif
 elseif has("mac") || has("unix")
   colorscheme solarized
+  set background=light
   set t_ut=
-  let g:solarized_termcolors=256
+  if !has('nvim')
+    let g:solarized_termcolors=256
+  endif
 endif
 if exists("&colorcolumn")
   set colorcolumn=80
@@ -165,6 +179,7 @@ function! PointFree() range
   normal! gvc
   call setline(line_no, output)
 endfunction
+autocmd FileType cabal setlocal commentstring=--\ %s
 " -v-
 
 " Search -^-
@@ -266,11 +281,11 @@ nnoremap <silent> <F4> :IndentLinesToggle<CR>
 " let g:jedi#force_py_version=s:python_version
 " let g:jedi#auto_vim_configuration=0
 " let g:jedi#popup_on_dot=0
-" -v-
+" " -v-
 
-" Neomake -^-
-let g:neomake_haskell_enabled_makers = ['hdevtools', 'hlint']
-" -v-
+" " Neomake -^-
+" let g:neomake_haskell_enabled_makers = ['hlint']
+" " -v-
 
 "Pandoc -^-
 " Only syntax highlight pandoc files.
@@ -285,13 +300,13 @@ let g:startify_skiplist=[
   \ ]
 " -v-
 
-" Syntastic -^-
-let g:syntastic_check_on_open=1
-let g:syntastic_enable_balloons=1
-let g:syntastic_enable_signs=1 " Put errors on left side.
-let g:syntastic_auto_loc_list=2 " Only show errors when I ask.
-let g:syntastic_python_checkers=['flake8']
-" -v-
+" " Syntastic -^-
+" let g:syntastic_check_on_open=1
+" let g:syntastic_enable_balloons=1
+" let g:syntastic_enable_signs=1 " Put errors on left side.
+" let g:syntastic_auto_loc_list=2 " Only show errors when I ask.
+" let g:syntastic_python_checkers=['flake8']
+" " -v-
 
 " Tabularize -^-
 nnoremap <Leader>t :Tab<Space>/
