@@ -136,5 +136,5 @@ alias vi=nvim
 source "$(blesh-share)/ble.sh"
 eval "$(atuin init bash --disable-up-arrow)"
 
-export NPM_TOKEN="glpat-NFXhN2TYnV3xssWzm612"
-export CI_JOB_TOKEN="glpat-NFXhN2TYnV3xssWzm612"
+export NPM_TOKEN="$(cat .gitlab-token)"
+export CI_JOB_TOKEN="$(cat .gitlab-token)"
