@@ -130,3 +130,11 @@ cats() {
     eval "echo \"\$$1\""
   fi
 }
+
+alias vim=nvim
+alias vi=nvim
+source "$(blesh-share)/ble.sh"
+eval "$(atuin init bash --disable-up-arrow)"
+
+export NPM_TOKEN="glpat-NFXhN2TYnV3xssWzm612"
+export CI_JOB_TOKEN="glpat-NFXhN2TYnV3xssWzm612"
