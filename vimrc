@@ -5,6 +5,11 @@ set nocompatible
 " -v-
 
 " Vim-plug -^-
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 call plug#begin("$HOME/.vim/bundle")
 " Plugins -^-
 Plug 'tpope/vim-sensible'               " Sensible defaults.
@@ -66,6 +71,10 @@ if has("nvim")
   Plug 'williamboman/mason.nvim'           " Neovim package manager
   Plug 'williamboman/mason-lspconfig.nvim' " Neovim package manager integration with lspconfig
   Plug 'neovim/nvim-lspconfig'
+  Plug 'lifepillar/vim-solarized8', { 'branch': 'neovim' }
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 endif
 " -v-
 call plug#end()
@@ -93,7 +102,7 @@ autocmd vimrc BufWinLeave *.py setlocal foldexpr< foldmethod<
 " Display -^-
 if has("gui_running")
   " You can pry my Windows mappings from my cold, dead fingers.
-  source $VIMRUNTIME/mswin.vim
+  source $VIMRUNTIME/scripts/mswin.vim
   colorscheme solarized
   set background=light
   " Font settings.
@@ -108,17 +117,19 @@ if has("gui_running")
       set guifont=Hack\ 13
     endif
   endif
-  set guioptions=cegrL
+  " set guioptions=cegrL
   set lines=76
   set columns=120
   if !has('nvim')
     winpos 0 0
   endif
 elseif has("mac") || has("unix")
-  colorscheme solarized
   set background=light
   set t_ut=
-  if !has('nvim')
+  if has('nvim')
+    colorscheme solarized8
+  else
+    colorscheme solarized
     let g:solarized_termcolors=256
   endif
 endif
@@ -222,16 +233,18 @@ let g:airline_right_alt_sep=''
 
 " Bufferline -^-
 let g:bufferline_echo=0
-let g:bufferline_show_bufnr=0
+let g:bufferline_show_bufnr=1
 " -v-
 
 " CtrlP -^-
 " let g:ctrlp_cmd='CtrlPBuffer'
 let g:ctrlp_custom_ignore={
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'dir':  '\v[\/](node_modules|dist|dist-newstyle)|\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|hi|o|dyn_o)$',
   \ }
 let g:ctrlp_cache_dir=$HOME . '/.vim/.cache/ctrlp'
+let g:ctrlp_max_depth=50
+let g:ctrlp_max_files=0
 " -v-
 
 " DelimitMate -^-
