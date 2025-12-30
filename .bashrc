@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PROMPT_COMMAND='if [ "$(id -u)" -ne 0  ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
+# export PROMPT_COMMAND='if [ "$(id -u)" -ne 0  ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
 cats() {
   if [[ "$#" != 1 ]]; then
     echo "usage: cats PATH" >&2
@@ -133,8 +133,6 @@ cats() {
 
 alias vim=nvim
 alias vi=nvim
-source "$(blesh-share)/ble.sh"
-eval "$(atuin init bash --disable-up-arrow)"
-
-export NPM_TOKEN="$(cat .gitlab-token)"
-export CI_JOB_TOKEN="$(cat .gitlab-token)"
+eval "$(atuin init bash)"
+export EDITOR="nvim"
+# alias ob="$(nix-build --no-out-link /home/vaibhavsagar/repos/uptrust/.obelisk/impl/default.nix -A command)/bin/ob"
