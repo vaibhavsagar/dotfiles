@@ -133,6 +133,7 @@ cats() {
 
 alias vim=nvim
 alias vi=nvim
+eval "$(direnv hook bash)"
 eval "$(atuin init bash)"
 export EDITOR="nvim"
 # alias ob="$(nix-build --no-out-link /home/vaibhavsagar/repos/uptrust/.obelisk/impl/default.nix -A command)/bin/ob"
